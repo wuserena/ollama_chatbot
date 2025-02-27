@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Ollama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        #chatbox {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 50%;
+            max-width: 600px;
+            height: 300px;
+            overflow-y: auto;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+        }
+        .message {
+            margin: 5px 0;
+        }
+        .user {
+            color: blue;
+            text-align: left;
+        }
+        .bot {
+            color: green;
+            text-align: left;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat with Ollama</h1>
+    <div id="chatbox"></div>
+    <input type="text" id="question" placeholder="Type your question here..." onkeypress="handleKeyPress(event)">
+    <button onclick="sendQuestion()">Send</button>
+
+    <script>
+        const apiUrl = "http://155.247.51.115:5000/chat"; // Ensure this matches your Flask server's port
+        let chatHistory = []; // Store chat history
+
+        async function sendQuestion() {
+            const questionInput = document.getElementById("question");
+            const question = questionInput.value.trim();
+            if (!question) return;
+
+            const chatbox = document.getElementById("chatbox");
+
+            // Add user's message to chat history and UI
+            chatHistory.push({ role: "user", content: question });
+            const userMessage = document.createElement("div");
+            userMessage.className = "message user";
+            userMessage.textContent = "You: " + question;
+            chatbox.appendChild(userMessage);
+
+            chatbox.scrollTop = chatbox.scrollHeight;
+            
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ prompt: chatHistory })
+                });
+
+                if (!response.ok) {
+                    throw new Error("Server Error: " + response.status);
+                }
+
+                // Handle streaming response
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder("utf-8");
+                let botMessage = document.createElement("div");
+                botMessage.className = "message bot";
+                botMessage.textContent = "ollama: ";
+                chatbox.appendChild(botMessage);
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    botMessage.textContent += decoder.decode(value, { stream: true });
+
+                    // Scroll to the bottom as message updates
+                    chatbox.scrollTop = chatbox.scrollHeight;
+                }
+
+            } catch (error) {
+                const botMessage = document.createElement("div");
+                botMessage.className = "message bot";
+                botMessage.textContent = "Error: " + error.message;
+                chatbox.appendChild(botMessage);
+            }
+
+            // Clear input field
+            questionInput.value = "";
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendQuestion();
+            }
+        }
+    </script>
+</body>
+</html>
