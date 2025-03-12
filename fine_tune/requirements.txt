@@ -1,3 +1,6 @@
-torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
-unsloth
+--index-url https://download.pytorch.org/whl/cu126
+torch
+torchvision
+torchaudio 
+unsloth[[cu126-torch260]]
 triton-windows
