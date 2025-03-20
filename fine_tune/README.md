@@ -3,6 +3,13 @@
 You can get the model [here](https://huggingface.co/SerenaWU/unsloth_deepseek.Q8_0.gguf).\
 The model is trained using data from **Healthcare NLP: LLMs, Transformers, Datasets** available on [Kaggle](https://www.kaggle.com/datasets/jpmiller/layoutlm/data).
 
+The code is retrieved from [here](https://github.com/unslothai/unsloth?tab=readme-ov-file)
+
+## System Environment
+
+- **Operating System**: WSL Ubuntu 24.04.1 LTS
+- **GPU**: NVIDIA Geforce RTX 4090 Laptop
+
 ## Usage
 
 To run the model with Ollama, use the following command:
