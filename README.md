@@ -30,6 +30,7 @@ pip install -r requirements.txt
 Build a virual environment to mangae the project
 ```sh
 python -m venv ollama_env
+ollama_env\Scripts\activate
 pip install ollama
 ```
 
