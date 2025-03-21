@@ -1,6 +1,6 @@
 # Chatbot with Deepseek-r1 Model  
 
-This project builds a chatbot using **MiniPupper** to recognize speech and send it to a server that applies the **Deepseek-r1** model to generate responses. The chatbot is integrated with a camera for face detection, enabling the system to track and follow the user by controlling a servo, enhancing interaction.  
+This project creates a chatbot using MiniPupper to recognize speech and send it to a server, which uses the Deepseek-r1 model to generate responses. The system is also integrated with a camera for face detection, allowing it to track and follow the user by controlling a servo, enhancing interaction.
 
 ## System Environment  
 
