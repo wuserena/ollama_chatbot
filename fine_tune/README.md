@@ -10,6 +10,20 @@ The code is retrieved from [here](https://github.com/unslothai/unsloth?tab=readm
 - **Operating System**: WSL Ubuntu 24.04.1 LTS
 - **GPU**: NVIDIA Geforce RTX 4090 Laptop
 
+## Requirements
+
+Install them using:
+
+```sh
+pip install -r requirements.txt
+```
+If you run on Windows, need to install:
+
+```sh
+pip install -U triton-windows
+```
+
+
 ## Usage
 
 To run the model with Ollama, use the following command:
