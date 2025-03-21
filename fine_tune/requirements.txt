@@ -4,3 +4,4 @@ torchvision
 torchaudio 
 unsloth[[cu126-torch260]]
 triton-windows
+scikit-learn
