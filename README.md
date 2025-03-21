@@ -5,17 +5,17 @@ This project creates a chatbot using MiniPupper to recognize speech and send it 
 ## System Environment  
 
 * Running Chatbot  
-- **Operating System**: Windows 11  
-- **GPU**: NVIDIA GeForce RTX 2060  
-- **CUDA Version**: 12.7  
-- **Python Version**: 3.12  
+  - **Operating System**: Windows 11  
+  - **GPU**: NVIDIA GeForce RTX 2060  
+  - **CUDA Version**: 12.7  
+  - **Python Version**: 3.12  
 
 * MiniPupper (Raspberry Pi Compute Module 4)  
-- **Screen**  
-- **Servo** (for movement tracking)  
-- **Camera** (for face detection)  
-- **Microphone** (on MiniPupper)  
-- **Speaker** (on the screen)  
+  - **Screen**  
+  - **Servo** (for movement tracking)  
+  - **Camera** (for face detection)  
+  - **Microphone** (on MiniPupper)  
+  - **Speaker** (on the screen)  
 
 ## Requirements  
 
