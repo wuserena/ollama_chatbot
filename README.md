@@ -11,11 +11,11 @@ This project creates a chatbot using MiniPupper to recognize speech and send it 
   - **Python Version**: 3.12  
 
 * MiniPupper (Raspberry Pi Compute Module 4)  
-  - **Screen**  
-  - **Servo** (for movement tracking)  
-  - **Camera** (for face detection)  
-  - **Microphone** (on MiniPupper)  
-  - **Speaker** (on the screen)  
+  - **Screen**  for print out the responses
+  - **Servo** for movement tracking
+  - **Camera** for face detection  
+  - **Microphone** (on MiniPupper) for speech recognize
+  - **Speaker** (on the screen) for users to hear the responses 
 
 ## Requirements  
 
