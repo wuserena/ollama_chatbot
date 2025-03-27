@@ -63,7 +63,7 @@ Run this on MiniPupper to start voice recognition and launch the interactive use
 python client_with_kivy.py
 ```
 
-## Run Sever
+## Run Serve
 1. Setting system environment
  ```sh
 set OLLAMA_HOST=http://0.0.0.0:11434
