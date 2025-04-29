@@ -1,9 +1,21 @@
-FROM /home/cfl/serena/model/unsloth.Q8_0.gguf
+FROM /home/cfl/serena/tool_model/unsloth.Q8_0.gguf
 
-TEMPLATE """Below are some instructions that describe some tasks. Write responses that appropriately complete each request.{{ if .Prompt }}
+TEMPLATE """Below are some instructions that describe some tasks. Write responses that appropriately complete each request.
 
+{{ if .Prompt }}
 ### Instruction:
-{{ .Prompt }}{{ end }}
+{{ .Prompt }}
+{{ end }}
+
+{{ if .Tools }}
+### Tools:
+{{ .Tools }}
+{{ end }}
+
+{{ if .ToolResponse }}
+### Tool Responses:
+{{ .ToolResponse }}
+{{ end }}
 
 ### Response:
 {{ .Response }}<｜end▁of▁sentence｜>"""
