@@ -1828,5 +1828,1275 @@
     "Instruction": "Gather speech therapy patient information through a structured conversation.",
     "input": "Assistant: I'm glad we could have this conversation!\n\nLet's summarize our decision tree:\n\n```\n                                          +---------------+\n                                          |  Are you    |\n                                          |  doing     |\n                                          |  speech   |\n                                          |  therapy?  |\n                                          +---------------+\n                                             | No        |\n                                             +-----------+\n                                             |             |\n                                             |  Would you  |\n                                             |  like to   |\n                                             |  receive   |\n                                             |  reminders?|\n                                             +-----------+\n                                             | Yes       |\n                                             |  (Specific)|\n                                             +-----------+\n                                             |             |\n                                             |  Time, day,|             |\n                                             |  and location|\n                                             +-----------+\n                                             |             |\n                                             |  Physical  |\n                                             |  therapy   |\n                                             |  appointments|\n                                             +-----------+\n                                             |             |\n                                             |  Do you want|             |\n                                             |  me to    |\n                                             |  schedule  |\n                                             |  recurring|\n                                             |  reminders? |\n                                             +-----------+\n                                             | Yes       |\n                                             (We're here!)\n```\n\nSince you'd like me to schedule recurring reminders for your physical therapy appointments, I'll set those up for you!\n\nLet's finalize the details. Would you like me to send you daily or weekly reminders?\n\n(Please respond with a simple \"Daily\" or \"Weekly\")\n\nUser: Daily\nUser: Daily",
     "output": "I think there might be some confusion! You've already responded that you'd like me to schedule recurring reminders for your physical therapy appointments, and I understand that you prefer daily reminders. I'll make sure to set those up for you.\n\nLet's finalize the details. Your physical therapy appointment reminders will be sent to you daily at [insert time]. Is there anything else I can help you with or any other questions you have?\n\n(And just a friendly note, since we're not discussing speech therapy-specific topics anymore, our decision tree will come to an end here.)"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, I'm undergoing physiotherapy for lower back pain.",
+    "output": "Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?\nUser: At the moment it's in-home sessions with my personal physical therapist.",
+    "output": "Would you like me to remind you on certain days or times to do your therapy exercises?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to do your therapy exercises?\nUser: Absolutely! It would be very useful if you could set up reminders for daily at home exercises.",
+    "output": "Okay! I will remind you throughout the week. Do you have a preference on which days of the week these reminders should go out, or specific times during the day that work best for you?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will remind you throughout the week. Do you have a preference on which days of the week these reminders should go out, or specific times during the day that work best for you?\nUser: Morning time works well with me as it sets my routine in motion from early on.",
+    "output": "Okay! I will set daily morning reminder for your therapy exercises starting tomorrow and repeat throughout the week at different times to accommodate any changes in schedule or timezone differences if applicable. Do you have a preference regarding how often reminders should be sent (daily, every few days) or is this okay?\n<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"key\": \"value\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will set daily morning reminder for your therapy exercises starting tomorrow and repeat throughout the week at different times to accommodate any changes in schedule or timezone differences if applicable. Do you have a preference regarding how often reminders should be sent (daily, every few days) or is this okay?\n<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"key\": \"value\"}}}]</function_call>\nUser: That sounds perfect!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"At-home physiotherapy; morning reminders set for Mondays and Thursdays\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you feel that there have been positive changes in the condition of your knees after participating in your physical therapy program?\nUser: Absolutely! Knee mobility has greatly improved, and so has my overall quality of life.",
+    "output": "Would you like to schedule another follow-up session or do you require any further assistance with scheduling or reminders for your appointments?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to schedule another follow-up session or do you require any further assistance with scheduling or reminders for your appointments?\nUser: No need for now; sessions going well on own pace.",
+    "output": "Okay! If there's anything more I can assist you with in the future, please don\u2019t hesitate to reach out. Take care and best of luck with your continuing physical therapy."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! If there's anything more I can assist you with in the future, please don\u2019t hesitate to reach out. Take care and best of luck with your continuing physical therapy.\nUser: Got it! Will update if needed. Thanks for support.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy type: at home independently, Time: 3 PM, Day(s): Mondays and Thursdays, Location: Not mentioned, Reminder method: Via email\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, I'm on outpatient physiotherapy for knee rehabilitation.",
+    "output": "What is your current frequency or schedule for these sessions?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What is your current frequency or schedule for these sessions?\nUser: Twice weekly, usually mornings to accommodate work.",
+    "output": "Would you like me to remind you of your upcoming appointments or any changes in the schedule?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you of your upcoming appointments or any changes in the schedule?\nUser: \"Could I have reminders on my phone, please?\"",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"key\": \"value\"}}}]</function_call>\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"At-home independently; Mondays and Thursdays 3 PM; via text\"}}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, undergoing physiotherapy for lower back pain.",
+    "output": "What is the frequency or duration of your current physiotherapy sessions per week?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What is the frequency or duration of your current physiotherapy sessions per week?\nUser: I have one session weekly lasting about an hour.",
+    "output": "Would you like me to help adjust this schedule based on when you are free and what works best for you, or do you prefer sticking with the existing plan?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to help adjust this schedule based on when you are free and what works best for you, or do you prefer sticking with the existing plan?\nUser: Prefer staying with current plan unless you suggest otherwise.",
+    "output": "Okay! I will make note of your preference regarding adjustments in scheduling. Is there anything else about your physiotherapy sessions that you would like to discuss or ask about?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will make note of your preference regarding adjustments in scheduling. Is there anything else about your physiotherapy sessions that you would like to discuss or ask about?\nUser: No further queries at the moment, thanks for offering support.",
+    "output": "Great! Feel free to reach out if you need assistance with any other aspects related to your physical therapy schedule or any other issues in future. Take care and good luck with your physiotherapy sessions. <end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Lower back pain therapy at home independently; weekly sessions on Mondays and Thursdays at 3 PM; reminder by text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Which method do you find most helpful when trying to stay motivated in your daily activities or goals?\nUser: Consistency and setting small, achievable goals are key!",
+    "output": "Would you like me to help structure a weekly routine that includes both balance exercises for Parkinson's disease management and the approach of consistency and smaller goals?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to help structure a weekly routine that includes both balance exercises for Parkinson's disease management and the approach of consistency and smaller goals?\nUser: Yes, please. That would be really helpful.",
+    "output": "Okay! I will create a schedule for your physical therapy sessions, ensuring they are consistent with small achievable goals in mind to help you stay motivated."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will create a schedule for your physical therapy sessions, ensuring they are consistent with small achievable goals in mind to help you stay motivated.\nUser: Great, looking forward to the plan! Thank you so much.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy type: at home independently\\nTime: 3 PM\\nDay(s): Tuesdays and Fridays\\nLocation: Home\\nReminder method: via text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: I see. For how much longer do you expect to continue with these treatments?\nUser: It varies; aiming to manage my condition without worsening or needing surgery.",
+    "output": "Thank you for sharing that. Are there any particular days of the week when your physiotherapy sessions are held, or would you prefer me to help you keep track of them based on a general schedule throughout the week?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing that. Are there any particular days of the week when your physiotherapy sessions are held, or would you prefer me to help you keep track of them based on a general schedule throughout the week?\nUser: You can send reminders every other day starting from Monday till Saturday as it suits my availability best!",
+    "output": "Understood. Would you like these reminder notifications sent in the morning, afternoon, or evening hours for your physiotherapy sessions?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Understood. Would you like these reminder notifications sent in the morning, afternoon, or evening hours for your physiotherapy sessions?\nUser: Morning works well; helps me stay proactive throughout the rest of my day.",
+    "output": "Perfect, I'll send reminders every other morning starting from Monday till Saturday at around 8 AM to help you maintain consistency in your therapy schedule!"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Perfect, I'll send reminders every other morning starting from Monday till Saturday at around 8 AM to help you maintain consistency in your therapy schedule!\nUser: Sounds perfect\u2014thanks for setting this up.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Lower back pain therapy at home independently; mornings; every other day from Monday to Saturday\"}}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, I'm undergoing physiotherapy for my knee injury.",
+    "output": "Is this physiotherapy being done at a clinic or at home with a therapist or are you following exercises independently prescribed by your doctor or therapist without external assistance?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Is this physiotherapy being done at a clinic or at home with a therapist or are you following exercises independently prescribed by your doctor or therapist without external assistance?\nUser: At the moment, I follow independent exercises recommended by my physical therapist, as they have been very specific about what to do.",
+    "output": "Would you like me to remind you on certain days or times to perform these exercises?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to perform these exercises?\nUser: Absolutely, having reminders for consistency would be really beneficial!",
+    "output": "Okay! I will add reminder settings based on your preferred frequency\u2014daily, multiple times a day, or just as needed. Could you specify how often you want me to remind you about exercising?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will add reminder settings based on your preferred frequency\u2014daily, multiple times a day, or just as needed. Could you specify how often you want me to remind you about exercising?\nUser: Once daily should suffice; this way the reminders don't become overwhelming while also ensuring consistency in my exercise routine.",
+    "output": "Great! Here are your preferences saved: frequency of exercises reminder is once a day, and time preference for reminders can be set at any convenient time during the day unless specified otherwise by you later. <end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy type: at home independently\\nTime: 3 PM\\nDay(s): Mondays and Thursdays\\nLocation: Not applicable\\nReminder method: via text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, currently undergoing physiotherapy for knee injury.",
+    "output": "How long have you been receiving physical therapy for your knee injury?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: How long have you been receiving physical therapy for your knee injury?\nUser: Since February and plan to continue through May.",
+    "output": "Would you like me to remind you on certain days or times of the week about your upcoming physical therapy appointments?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times of the week about your upcoming physical therapy appointments?\nUser: Definitely, reminder set up would be greatly appreciated!",
+    "output": "{Save preference}\n\nHere we have reached a complete path in our decision tree and will now end this conversation."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: {Save preference}\n\nHere we have reached a complete path in our decision tree and will now end this conversation.\nUser: Thank you for all your assistance with my appointment reminders; they are very much appreciated!",
+    "output": "You're welcome! It's great to hear that I could help make things easier for you. Don't hesitate to reach out if you need any more support or have questions in the future. Take care and good luck with your therapy sessions!"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: You're welcome! It's great to hear that I could help make things easier for you. Don't hesitate to reach out if you need any more support or have questions in the future. Take care and good luck with your therapy sessions!\nUser: End conversation.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Knee injury therapy at home independently; reminders set for Mondays and Thursdays at 3 PM; reminder method: via text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: This is a User Information Input question as it requires the user to provide specific details about their exercise experiences which will be stored and used later in this conversation. The assistant is gathering information that can help personalize further recommendations for users' physiotherapy sessions.\nUser: I see you're providing valuable insights! Could you please elaborate on how these exercises have helped your rehabilitation process?",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Physical therapy at home independently; reminders set for Mondays and Thursdays at 3 PM\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, currently undergoing physiotherapy for lower back pain.",
+    "output": "Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?\nUser: It's through an outpatient program at a local physical therapy clinic; in-person sessions initially then moved to remote consultations due to convenience and safety during the pandemic.",
+    "output": "Would you like me to remind you on certain days or times to do your therapy exercises, even after your regular appointments are over?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to do your therapy exercises, even after your regular appointments are over?\nUser: Yes, please set up a reminder system for daily evening routines; it's easy to forget without guidance!",
+    "output": "Okay! I will remind you throughout the week. Do you have a preference on which days or times of day?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will remind you throughout the week. Do you have a preference on which days or times of day?\nUser: Prefer weekdays after work hours when my energy levels are lower, evenings can be helpful too.",
+    "output": "Understood! You prefer reminders during weekday evenings. To summarize what we've discussed so far:\n- Therapy is currently being conducted at a local physical therapy clinic and has transitioned to remote consultations post-pandemic.\n- Daily evening exercises will be set up as daily reminders for better adherence.\n- Preferred reminder times are weekdays after work hours when energy levels are lower, but evenings can also be helpful."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Understood! You prefer reminders during weekday evenings. To summarize what we've discussed so far:\n- Therapy is currently being conducted at a local physical therapy clinic and has transitioned to remote consultations post-pandemic.\n- Daily evening exercises will be set up as daily reminders for better adherence.\n- Preferred reminder times are weekdays after work hours when energy levels are lower, but evenings can also be helpful.\nUser: Correct! It\u2019s crucial to adhere strictly to the schedule you propose so that I can recover fully from my injuries and reduce the risk of reinjury in the future. Your support is greatly appreciated!",
+    "output": "Thank you for your feedback and affirmation! With this information, we are now equipped to set up a reminder system tailored to your needs with daily prompts during preferred times after work or evenings as per your requirements. I will create these reminders based on today\u2019s inputs about therapy type, preference of in-person sessions initially followed by remote consultations, and scheduling of exercises post-work timings when energy levels are lower.\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy at at a local physical therapy clinic; weekdays after work; daily evening reminders; set by assistant\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to do your physiotherapy exercises?\nUser: It would be helpful to receive reminders, as it can sometimes slip my mind when I'm busy with other tasks.",
+    "output": "Okay! What days of the week and times do you have physiotherapy with a provider?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! What days of the week and times do you have physiotherapy with a provider?\nUser: Tuesdays at 3 PM is convenient for me.",
+    "output": "Thank you for sharing that information. I will add it to your schedule so I can remind you about your appointment on Tuesday at 3 PM. Do you need any further assistance or reminders set up currently?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing that information. I will add it to your schedule so I can remind you about your appointment on Tuesday at 3 PM. Do you need any further assistance or reminders set up currently?\nUser: No other appointments, but thank you for organizing things!",
+    "output": "You're welcome! If there are no more questions right now, that marks the end of our current interaction. However, if you have concerns in future about your physical therapy schedule, feel free to reach out at any time. Take care and good luck with your physiotherapy sessions!\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy type: at home independently\\nTime: Tuesdays at 3 PM\\nDay(s): Tuesday\\nLocation: Not mentioned\\nReminder method: Via email\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, I'm undergoing physiotherapy for knee pain.",
+    "output": "Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?\nUser: It\u2019s mostly conducted under the supervision of my personal physical therapist in their dedicated facility but includes some exercises to do at home daily.",
+    "output": "Would you like me to remind you on certain days or times to do your therapy exercises that you perform independently?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to do your therapy exercises that you perform independently?\nUser: Absolutely, I would appreciate reminders for consistency and progression as per the guidelines given by my therapist.",
+    "output": "Okay! I will remind you throughout the week. Do you have a preference on which days of the week or specific times during the day you\u2019d like to be reminded?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will remind you throughout the week. Do you have a preference on which days of the week or specific times during the day you\u2019d like to be reminded?\nUser: Morning is best; once daily, preferably around 9 am if possible.",
+    "output": "Great! We'll set up those reminders for mornings at 9 AM and I will make sure we cover both your in-clinic sessions as well as the home exercises you mentioned. Would you like me to send these reminders via email or a message app?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! We'll set up those reminders for mornings at 9 AM and I will make sure we cover both your in-clinic sessions as well as the home exercises you mentioned. Would you like me to send these reminders via email or a message app?\nUser: Email is preferable, thank you.",
+    "output": "Okay! I'll set up those reminder emails and also ensure that we have everything prepared for your in-clinic sessions based on what\u2019s best as per the information you provided today. If there are any changes to your schedule or if you need to update me with new exercises, please feel free to reach out at any time!"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I'll set up those reminder emails and also ensure that we have everything prepared for your in-clinic sessions based on what\u2019s best as per the information you provided today. If there are any changes to your schedule or if you need to update me with new exercises, please feel free to reach out at any time!\nUser: Thank you so much for helping manage my physical therapy routine; it'll certainly support adherence and progress!",
+    "output": "You\u2019re very welcome! It\u2019s a pleasure assisting you. Don\u2019t hesitate to get in touch if you need anything else or have questions about your schedule, therapies etc. Take care until our next interaction!"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: You\u2019re very welcome! It\u2019s a pleasure assisting you. Don\u2019t hesitate to get in touch if you need anything else or have questions about your schedule, therapies etc. Take care until our next interaction!\nUser: Will do, thank you for being so helpful and understanding! See you soon.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"At home independently; mornings at 9 AM; Mondays and Thursdays; Email reminder\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, I'm undergoing physiotherapy for lower back pain.",
+    "output": "Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Is this therapy at home independently, at home with a physical therapist or other provider, or at a physical therapy clinic?\nUser: At a local outpatient facility; it is managed under supervision.",
+    "output": "Would you like me to remind you in advance of your physical therapy appointments there?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you in advance of your physical therapy appointments there?\nUser: Yes, please set reminders as I need the consistency.",
+    "output": "Okay! What days and times are most convenient for you at this facility?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! What days and times are most convenient for you at this facility?\nUser: Preferably mornings or early afternoons on weekdays.",
+    "output": "Great, would you like me to schedule these reminders daily or just before each session?\n\nAction: {Save preference}"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Great, would you like me to schedule these reminders daily or just before each session?\n\nAction: {Save preference}\nUser: Task Category: Patient Management",
+    "output": "Task Details: The patient is currently doing physical therapy at a local outpatient facility for lower back pain. They have requested that reminders be set for their appointments as they need consistency to maintain attendance. The patient prefers morning or early afternoon sessions on weekdays."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Task Details: The patient is currently doing physical therapy at a local outpatient facility for lower back pain. They have requested that reminders be set for their appointments as they need consistency to maintain attendance. The patient prefers morning or early afternoon sessions on weekdays.\nUser: Action Steps:\n1. Determine the frequency of scheduled reminders (daily, just before each session).\n2. Set up reminder notifications according to the selected frequency and preferred times (morning/early afternoon on weekdays).",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Physical therapy at local outpatient facility; mornings/early afternoons; just before sessions; reminder by text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What is the nature of your lower back pain (e.g., injury, chronic condition)?\nUser: The lower back pain results from a lumbar disc herniation with nerve compression.",
+    "output": "Would you like recommendations for exercises or techniques to help alleviate your symptoms and support recovery?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like recommendations for exercises or techniques to help alleviate your symptoms and support recovery?\nUser: Yes, I'd appreciate guidance on exercises that can ease discomfort.",
+    "output": "Great! What type of setting do you prefer for these exercises\u2014at home, in a clinic, or another location?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! What type of setting do you prefer for these exercises\u2014at home, in a clinic, or another location?\nUser: Prefer at-home sessions; more convenient and consistent practice environment.",
+    "output": "Okay! I will provide you with some tailored exercises to perform at home as per your comfort and convenience. If you have any questions or need adjustments on the exercises, feel free to reach out."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will provide you with some tailored exercises to perform at home as per your comfort and convenience. If you have any questions or need adjustments on the exercises, feel free to reach out.\nUser: Thanks for the support\u2014looking forward to enhancing my recovery process with these resources.",
+    "output": "You're welcome! Feel free to contact me anytime if you need assistance or further guidance. Here are the tailored exercises we discussed:\n\n<repeat user\u2019s preference>\n- Do specific stretches and strengthening exercises for your lumbar region, focusing on areas that feel tight or painful during periods of rest or movement.\n- Incorporate core stability workouts to improve overall strength in your lower back muscles.\n- Avoid any activity if it exacerbates pain; always consult with a healthcare professional before starting new exercises or routines.\n</repeat>\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy type: at-home independently\\nTime: 3 PM\\nDay(s): Mondays and Thursdays\\nLocation: Not mentioned\\nReminder method: via text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, I'm undergoing rehabilitation for a knee injury.",
+    "output": "What is the current setting where your physical therapy takes place - at home independently, at an outpatient clinic or hospital, or in some other location such as nursing facility or school based program?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What is the current setting where your physical therapy takes place - at home independently, at an outpatient clinic or hospital, or in some other location such as nursing facility or school based program?\nUser: At an outpatient rehab center with professional guidance.",
+    "output": "Would you like me to remind you for any scheduled appointments or routine check-ins related to your physical therapy sessions?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you for any scheduled appointments or routine check-ins related to your physical therapy sessions?\nUser: Yes, please set reminders for my upcoming sessions and follow-ups.",
+    "output": "Regarding the frequency of these reminders, are you looking for a daily reminder, just before each session, or at specific times prior to more frequent intervals (e.g., days in advance)?\n\nAction: {Save days, times}"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Regarding the frequency of these reminders, are you looking for a daily reminder, just before each session, or at specific times prior to more frequent intervals (e.g., days in advance)?\n\nAction: {Save days, times}\nUser: Preferably weekly reminders two days before sessions and one day prior if close to appointment date.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy type: at home independently, Time: varies, Day(s): unspecified, Location: outpatient rehab center, Reminder method: weekly reminders two days before sessions\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Based on your response that you are attending outpatient rehab for arthritis, here is the next question to gather more details about the specific exercises assigned during your rehabilitation sessions.\nUser: Can you tell me about the types of exercises you're doing for your arthritis management?",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy at home independently on Mondays and Thursdays at 3 PM by text reminder\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of physical therapy?\nUser: Yes, currently undergoing physiotherapy for knee injury.",
+    "output": "What form is this therapy taking place in (at home independently or at a clinic)?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What form is this therapy taking place in (at home independently or at a clinic)?\nUser: Therapy occurs mainly at a specialized physiotherapy center with occasional exercises at home for strengthening and flexibility improvement.",
+    "output": "Do you require any specific reminders or assistance to adhere strictly to your current rehabilitation program?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you require any specific reminders or assistance to adhere strictly to your current rehabilitation program?\nUser: Yes, I need regular motivational support from my therapist to ensure consistency in the exercises as well as some technical guidance on certain movements.",
+    "output": "Would you like me to set up a schedule for these therapy sessions and encourage adherence, providing periodic reminders or updates about your progress towards recovery goals with the healthcare provider?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to set up a schedule for these therapy sessions and encourage adherence, providing periodic reminders or updates about your progress towards recovery goals with the healthcare provider?\nUser: Yes, please help maintain an organized calendar of appointments so I can prioritize my rehabilitation activities without missing any session due to mismanagement.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Location Therapy type: therapy at home independently, Time: 3 PM, Days: Mondays and Thursdays, Reminder method: via text\"}}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! Could you please specify if these sessions are at home independently, with a provider at home, or in a physical therapy clinic?\nUser: They take place on Tuesdays and Thursdays at 4 pm. All sessions are held at my home under the guidance of an at-home physiotherapist.",
+    "output": "Would you like me to remind you prior to your scheduled appointments for Tuesday and Thursday this week, or would you prefer if I reminded you every time we reach closer to those dates?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you prior to your scheduled appointments for Tuesday and Thursday this week, or would you prefer if I reminded you every time we reach closer to those dates?\nUser: Remind me one day before each session for the next two weeks to ensure punctuality.",
+    "output": "Okay! What times do you find most convenient for these reminders\u2014morning, afternoon, or evening?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! What times do you find most convenient for these reminders\u2014morning, afternoon, or evening?\nUser: Morning would be ideal as it allows ample time for planning and adjustments if necessary.",
+    "output": "Understood. I will set up the reminder notifications to send one day before each of your upcoming physiotherapy sessions at approximately 9 am, starting from next week. Is there anything else you'd like me to add or adjust in my support for you regarding physical therapy?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Understood. I will set up the reminder notifications to send one day before each of your upcoming physiotherapy sessions at approximately 9 am, starting from next week. Is there anything else you'd like me to add or adjust in my support for you regarding physical therapy?\nUser: That sounds perfect! Thank you so much for setting that up and providing assistance with managing my appointments.",
+    "output": "You're very welcome! I'm glad I could help manage your physiotherapy schedule more efficiently. Don't hesitate to reach out if there are any further adjustments or support needed in the future. Take care, and see you next time!\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Location: therapyat at-home physiotherapist.; Time: 3 PM; Day(s): Mondays and Thursdays; Reminder method: via text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What is the frequency of your current physical therapy sessions for improving balance following a stroke?\nUser: Twice weekly to start with and now once weekly at home with exercises I've been shown how to perform independently.",
+    "output": "Would you like assistance setting reminders or creating a routine around this once-weekly exercise session at home, in addition to the twice-weekly therapy sessions previously attended?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like assistance setting reminders or creating a routine around this once-weekly exercise session at home, in addition to the twice-weekly therapy sessions previously attended?\nUser: Yes, could use help managing time for more frequent home practice between hospital visits.",
+    "output": "What specific times of day would you prefer me to remind you about your balance exercises at home?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: What specific times of day would you prefer me to remind you about your balance exercises at home?\nUser: Afternoons work best as mornings are busier and I get tired easily in the evenings post-stroke.",
+    "output": "Would you like reminders sent in the afternoon, or is there another time that works better for you?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like reminders sent in the afternoon, or is there another time that works better for you?\nUser: Afternoon before usual exercise slot around late afternoons would be ideal to prepare mentally.",
+    "output": "Great! I will set a reminder to send you an alert about your home exercises this afternoon before your scheduled therapy session at home. If you need to adjust any details or have more questions, feel free to let me know."
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! I will set a reminder to send you an alert about your home exercises this afternoon before your scheduled therapy session at home. If you need to adjust any details or have more questions, feel free to let me know.\nUser: Thank you for helping organize my physical therapy schedule\u2014much appreciated!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Location: therapy at home independently; Time: afternoon 3 PM; Day(s): Tuesdays and Fridays; Reminder method: via text\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Could you please specify whether your current physical therapy is aimed at improving balance or involves another part of the body? Also, can you tell me approximately how long you've been performing these exercises at home independently?\nUser: Balance training primarily; about two months.",
+    "output": "Based on what you\u2019ve told me so far, I am here to help support your physical therapy journey by setting reminders for the balance training sessions and discussing any concerns or potential progress with you as needed! Would you like assistance in creating a weekly schedule of these balance exercises?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Based on what you\u2019ve told me so far, I am here to help support your physical therapy journey by setting reminders for the balance training sessions and discussing any concerns or potential progress with you as needed! Would you like assistance in creating a weekly schedule of these balance exercises?\nUser: Absolutely, having someone assist me would be great.",
+    "output": "Great! Let's set up a time tracking system to make sure that your daily session is consistent and effective. Shall I help create an initial plan for the next two months or shall we adjust as needed after some weeks based on progress?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Let's set up a time tracking system to make sure that your daily session is consistent and effective. Shall I help create an initial plan for the next two months or shall we adjust as needed after some weeks based on progress?\nUser: Plan initially, but adjustments can be made later.",
+    "output": "Alright! Here\u2019s a simple weekly structure to start with; you may modify it according to your comfort and results achieved. I will send reminders every morning about the balance training session for each day of the week at a time most convenient to you. Does this schedule work best for you?"
+  },
+  {
+    "Instruction": "Gather pysical therapy patient information through a structured conversation.",
+    "input": "Assistant: Alright! Here\u2019s a simple weekly structure to start with; you may modify it according to your comfort and results achieved. I will send reminders every morning about the balance training session for each day of the week at a time most convenient to you. Does this schedule work best for you?\nUser: Yes, that would be very helpful!",
+    "output": "Fantastic! Here\u2019s how it looks like: Mon-Wed-Fri from 9 am -10 am and Tue-Thu from 6 pm to 7 pm. I will send reminders every morning about the balance training session for each day of the week at these times you specified, does this work well with your schedule?\n\nAction: {Save days, times}\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy at home independently; daily at 6 PM on Mon & Thu; via reminders\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently receiving any other type of therapy alongside occupational therapy?\nUser: Yes, also undergoing physical therapy sessions.",
+    "output": "Have you informed your physical therapist about scheduling conflicts caused due to these two therapies?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Have you informed your physical therapist about scheduling conflicts caused due to these two therapies?\nUser: Faced some minor challenges but haven't discussed with physio yet.",
+    "output": "Would it be beneficial for both therapists to align on a schedule that would prevent any potential overlap or conflict in treatment sessions?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would it be beneficial for both therapists to align on a schedule that would prevent any potential overlap or conflict in treatment sessions?\nUser: That sounds like a wise idea, aiming for smooth coordination between two therapies.",
+    "output": "<save_preference [{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"key\": \"value\"},\"summary\":\"Coordination of physical and occupational therapy schedules to avoid overlap\"}}]>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <save_preference [{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"key\": \"value\"},\"summary\":\"Coordination of physical and occupational therapy schedules to avoid overlap\"}}]>\nUser: Great! I\u2019ll bring it up with my physio during the next session.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Occupational therapy and physical therapy schedules aligned for May 10th, Wednesday, at home with therapist, reminder via email.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you prefer to continue with the same treatment plan or would you like to explore new therapies that might help in a different way?\nUser: As someone currently engaged in occupational therapy, I believe ongoing communication and collaboration with my therapist is crucial for making informed decisions about my care.",
+    "output": "Are you looking for guidance on how best to engage in constructive conversation regarding your treatment options or are you seeking advice from your therapist directly as part of the therapeutic process?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you looking for guidance on how best to engage in constructive conversation regarding your treatment options or are you seeking advice from your therapist directly as part of the therapeutic process?\nUser: While open dialogue can be beneficial, it's also important that any discussions remain under professional supervision.",
+    "output": "Do you believe these sessions should occur during scheduled therapy times with your current OT for accountability and structure, or would you prefer a separate but occasional check-in arrangement to ensure both transparency in communication and adherence to treatment plans?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you believe these sessions should occur during scheduled therapy times with your current OT for accountability and structure, or would you prefer a separate but occasional check-in arrangement to ensure both transparency in communication and adherence to treatment plans?\nUser: I see value in discussing options openly yet within the structured environment of therapeutic supervision.",
+    "output": "Based on our conversation today, what measures do you think should be taken by your therapist or healthcare team for regular updates without compromising progress towards goals outlined in therapy sessions?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Based on our conversation today, what measures do you think should be taken by your therapist or healthcare team for regular updates without compromising progress towards goals outlined in therapy sessions?\nUser: A systematic approach to monitoring improvements while respecting privacy seems ideal\u2014perhaps through periodic questionnaires completed independently before meetings.",
+    "output": "Do you believe it would also benefit from a collaborative input where both the patient and therapist can jointly review these findings during scheduled appointments, ensuring all objectives are aligned towards successful rehabilitation?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you believe it would also benefit from a collaborative input where both the patient and therapist can jointly review these findings during scheduled appointments, ensuring all objectives are aligned towards successful rehabilitation?\nUser: Absolutely, collaboration between me (the patient) and my occupational therapist is key to achieving optimal therapy outcomes.",
+    "output": "Is there anything specific you would like your therapist to focus on in the upcoming sessions or any particular goals that you have set for yourself regarding your recovery process from hand rehabilitation?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Is there anything specific you would like your therapist to focus on in the upcoming sessions or any particular goals that you have set for yourself regarding your recovery process from hand rehabilitation?\nUser: My goal is increased dexterity with a special emphasis on improving fine motor control and reducing pain during everyday tasks.",
+    "output": "What kind of tools, equipment, or modifications would you like to discuss or explore in order to achieve these objectives during therapy sessions?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What kind of tools, equipment, or modifications would you like to discuss or explore in order to achieve these objectives during therapy sessions?\nUser: I'd be interested in exploring adaptive devices tailored towards enhancing my hand function, as well as any other innovations that might facilitate a more effective rehabilitation process.",
+    "output": "Great! Here are some options we could consider together with your therapist for tools and equipment to improve dexterity during everyday activities at home or elsewhere.\n  1. Adaptive utensils/cutlery designed specifically for people recovering from hand injuries.\n  2. Ergonomic keyboards, mice, or other computer peripherals that require minimal effort yet maximize comfort and precision.\n  3. Hand therapy devices such as grip strengtheners, range of motion exercisers, or weighted gloves to build strength gradually.\n\nI suggest discussing these with your occupational therapist during the next session who can provide expert advice on how best to use them for maximum benefit while ensuring they are safe and effective based on your progress towards rehabilitation goals. This approach not only helps in achieving personal objectives but also promotes a sense of ownership over one\u2019s recovery journey\u2014a powerful motivator!\n\nWould you like us to schedule these discussions with your therapist or do you wish to handle it independently?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Here are some options we could consider together with your therapist for tools and equipment to improve dexterity during everyday activities at home or elsewhere.\n  1. Adaptive utensils/cutlery designed specifically for people recovering from hand injuries.\n  2. Ergonomic keyboards, mice, or other computer peripherals that require minimal effort yet maximize comfort and precision.\n  3. Hand therapy devices such as grip strengtheners, range of motion exercisers, or weighted gloves to build strength gradually.\n\nI suggest discussing these with your occupational therapist during the next session who can provide expert advice on how best to use them for maximum benefit while ensuring they are safe and effective based on your progress towards rehabilitation goals. This approach not only helps in achieving personal objectives but also promotes a sense of ownership over one\u2019s recovery journey\u2014a powerful motivator!\n\nWould you like us to schedule these discussions with your therapist or do you wish to handle it independently?\nUser: I appreciate the information provided, and I think discussing specific tools and equipment options in detail would be beneficial during therapy sessions.",
+    "output": "Great! Here is a summary of our conversation so far for reference:\n\n- Current OT engagement: Hand rehabilitation post-surgery.\n- Preferred approach to discussions about treatment plans: Open dialogue under professional supervision, with occasional check-ins and periodic questionnaires before scheduled appointments.\n- Goals: Increased dexterity focusing on fine motor control and reduced pain during everyday tasks.\n- Specific Objectives: Greater dexterity using adaptive devices tailored towards enhancing hand function while ensuring they are safe and effective based on progress toward rehabilitation goals.\n- Suggested Tools & Equipment Options to Explore: Adaptive utensils/cutlery, ergonomic keyboards or mice, and hand therapy devices such as grip strengtheners, range of motion exercisers, weighted gloves for building strength gradually.\n- Preferred Approach Moving Forward: Discussing specific tools and equipment options in detail during scheduled therapy sessions with your therapist who can provide expert advice on how best to use them for maximum benefit while ensuring safety and effectiveness based on progress towards personal objectives."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Here is a summary of our conversation so far for reference:\n\n- Current OT engagement: Hand rehabilitation post-surgery.\n- Preferred approach to discussions about treatment plans: Open dialogue under professional supervision, with occasional check-ins and periodic questionnaires before scheduled appointments.\n- Goals: Increased dexterity focusing on fine motor control and reduced pain during everyday tasks.\n- Specific Objectives: Greater dexterity using adaptive devices tailored towards enhancing hand function while ensuring they are safe and effective based on progress toward rehabilitation goals.\n- Suggested Tools & Equipment Options to Explore: Adaptive utensils/cutlery, ergonomic keyboards or mice, and hand therapy devices such as grip strengtheners, range of motion exercisers, weighted gloves for building strength gradually.\n- Preferred Approach Moving Forward: Discussing specific tools and equipment options in detail during scheduled therapy sessions with your therapist who can provide expert advice on how best to use them for maximum benefit while ensuring safety and effectiveness based on progress towards personal objectives.\nUser: Thank you for summarizing our conversation thus far, which has been immensely helpful in clarifying my stance regarding occupational therapy discussions under professional guidance and setting realistic goals moving forward. It also provided clear recommendations about potential tools & equipment options to discuss with my therapist during upcoming sessions\u2014this insight will be instrumental in enhancing the effectiveness of my rehabilitation process!\n  \nMoving ahead, I would like you or my therapist (whichever is more convenient) to coordinate scheduling another meeting where we can delve deeper into these innovative approaches together. Your input today has been incredibly enlightening and greatly appreciated.",
+    "output": "You're welcome! It was a pleasure assisting you in planning for your occupational therapy discussions with your therapist. We are here anytime if you have any questions or need further assistance regarding this process, before the next session or at any point during ongoing sessions. Wishing you all the best on your road to recovery and increased dexterity through effective use of adaptive devices tailored towards enhancing hand function as per our conversation today!\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Hand rehabilitation post-surgery. Weekly sessions focusing on fine motor control and reduced pain using adaptive devices such as ergonomic keyboards, grip strengtheners in a therapist's guidance.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Based on your response that there is ongoing occupational therapy, I have a few additional questions to help us better tailor our approach for you. \n\nWould the OT be done at home independently?\nUser: Yes, currently all my OT sessions are conducted at home under professional guidance.",
+    "output": "Understood! Since your OT sessions take place at home, we can ensure that reminders about appointments and routines will help maintain consistency in managing them without needing to rely on external support for timing unless you prefer so. Would you like any assistance with setting up reminders or adjusting existing ones?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Understood! Since your OT sessions take place at home, we can ensure that reminders about appointments and routines will help maintain consistency in managing them without needing to rely on external support for timing unless you prefer so. Would you like any assistance with setting up reminders or adjusting existing ones?\nUser: Absolutely, having a reliable method of scheduling reminders would be very beneficial for me as I juggle my therapy sessions alongside other daily responsibilities. A digital tool that can send notifications directly to my phone would work perfectly!",
+    "output": "Thank you for sharing your preferences on how we should manage reminders regarding these occupational therapy appointments at home independently. Here are a few recommendations based on this input: \n\n1. Consider integrating our scheduling app, which offers automated notification features and is capable of sending notifications directly to your phone via email or push alerts\u2014ensuring that you never miss an appointment or exercise session.\n2. We could also set up regular check-ins with you during the coming weeks to ensure any needs arising from this setup are promptly addressed. \n\nWould these recommendations be helpful, or do you have other suggestions for managing your reminders?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing your preferences on how we should manage reminders regarding these occupational therapy appointments at home independently. Here are a few recommendations based on this input: \n\n1. Consider integrating our scheduling app, which offers automated notification features and is capable of sending notifications directly to your phone via email or push alerts\u2014ensuring that you never miss an appointment or exercise session.\n2. We could also set up regular check-ins with you during the coming weeks to ensure any needs arising from this setup are promptly addressed. \n\nWould these recommendations be helpful, or do you have other suggestions for managing your reminders?\nUser: These methods sound very practical and I appreciate your support in ensuring that my appointments stay on track. As of now, implementing such digital tools would help me maintain consistency with minimal reliance on external assistance.",
+    "output": "Great! Since we've established the importance of maintaining regularity and have agreed upon utilizing scheduling apps for reminders about your occupational therapy sessions at home independently\u2014we can proceed by setting up these notifications in a way that suits you best, ensuring to avoid overloading or causing fatigue from excessive alerts if needed. \n\nWould it be alright with you if I schedule another interaction soon so we can review how the new system is working out for you?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Since we've established the importance of maintaining regularity and have agreed upon utilizing scheduling apps for reminders about your occupational therapy sessions at home independently\u2014we can proceed by setting up these notifications in a way that suits you best, ensuring to avoid overloading or causing fatigue from excessive alerts if needed. \n\nWould it be alright with you if I schedule another interaction soon so we can review how the new system is working out for you?\nUser: Absolutely! It's important that everything works smoothly and according to plan in order to maximize effectiveness of my therapy sessions, so having regular updates will definitely help us achieve this. Please go ahead and set up a follow-up interaction\u2014I look forward to it and any feedback or suggestions you might have along the way too.",
+    "output": "Thank you for your positive response! I am here whenever you need further assistance in managing these therapy schedules, or if there are changes regarding how reminders work out later on\u2014you can always reach me anytime before our next scheduled interaction to discuss and make any necessary adjustments. It's been a pleasure helping coordinate everything according to plan, so far!\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Occupational therapy at home; reminder set up via digital tool for weekly sessions\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently undergoing occupational therapy?\nUser: Yes, I'm currently undergoing occupational therapy.",
+    "output": "Based on your current situation where you are already undergoing occupational therapy, should we focus more on improving or maintaining this schedule for you?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Based on your current situation where you are already undergoing occupational therapy, should we focus more on improving or maintaining this schedule for you?\nUser: Focus on maintaining the current schedule as it is working well for me.",
+    "output": "Would you like to set up reminders to ensure you don't miss any sessions of occupational therapy?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to set up reminders to ensure you don't miss any sessions of occupational therapy?\nUser: Set up reminders; I appreciate the support in staying organized and punctual!",
+    "output": "Great, do you prefer your reminders via a phone call, text message or email?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great, do you prefer your reminders via a phone call, text message or email?\nUser: Prefer email for easy access on different devices.",
+    "output": "Do you want to receive reminders at specific times before each session or just one reminder before the start of therapy time?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you want to receive reminders at specific times before each session or just one reminder before the start of therapy time?\nUser: Just one reminder prior; timing should be adequate enough without overwhelming my routine.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", 'arguments': {'key': 'summary', 'value':'OT schedule maintained, reminders set up via email, with a single notice before each session.'}}]</function_call>\nEnd"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <function_call>[{\"function\": {\"name\": \"save_preference\", 'arguments': {'key': 'summary', 'value':'OT schedule maintained, reminders set up via email, with a single notice before each session.'}}]</function_call>\nEnd\nUser: Understood. If you have any more questions or need further assistance in the future regarding your occupational therapy sessions or other matters, please feel free to ask!",
+    "output": "Thank you for your feedback and understanding! I'm here if you need anything else in regards to your Occupational Therapy schedule or otherwise - take care until next time."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for your feedback and understanding! I'm here if you need anything else in regards to your Occupational Therapy schedule or otherwise - take care until next time.\nUser: You're welcome! Don't hesitate to reach out whenever needed. Goodbye, have a productive therapy session ahead!",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"OT schedule maintained; reminders via email. One notice before each session.\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: How would you like to receive your therapy reminders? \n\n<multiple_choice>\nA) Text message\nB) Phone call\nC) Email\nD) None of the above\n</multiple_choice>\n\nPlease choose an option (A, B, C or D).\nUser: A) Text message",
+    "output": "Understood. What type of therapy did you receive previously?\n\n<multiple_choice>\nA) Physical Therapy\nB) Occupational Therapy\nC) Speech Therapy\nD) Mental Health Counseling\n</multiple_choice>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Understood. What type of therapy did you receive previously?\n\n<multiple_choice>\nA) Physical Therapy\nB) Occupational Therapy\nC) Speech Therapy\nD) Mental Health Counseling\n</multiple_choice>\nUser: B) Occupational Therapy",
+    "output": "Great! Are you looking to continue with the same type of occupational therapy or are you interested in exploring other types?\n\n<yes_no>\nA) Continuing with the same type of therapy.\nB) Interested in trying a different type of therapy.\n</yes_no>\n\nPlease choose an option (A or B)."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Are you looking to continue with the same type of occupational therapy or are you interested in exploring other types?\n\n<yes_no>\nA) Continuing with the same type of therapy.\nB) Interested in trying a different type of therapy.\n</yes_no>\n\nPlease choose an option (A or B).\nUser: A) Continuing with the same type of therapy.",
+    "output": "To proceed, could you please specify if this is for weekday mornings or afternoons?\n\n<yes_no>\nA) Weekday mornings\nB) Weekday afternoons\nC) Weekend morning\nD) Weekend afternoon\n</yes_no>\n\nPlease choose an option (A, B, C, or D)."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: To proceed, could you please specify if this is for weekday mornings or afternoons?\n\n<yes_no>\nA) Weekday mornings\nB) Weekday afternoons\nC) Weekend morning\nD) Weekend afternoon\n</yes_no>\n\nPlease choose an option (A, B, C, or D).\nUser: A) Weekday mornings",
+    "output": "Perfect. What specific days of the week are you available for therapy during weekday mornings?\n\n<multiple_choice>\nA) Monday\nB) Tuesday\nC) Wednesday\nD) Thursday\nE) Friday\n</multiple_choice>\n\nPlease choose an option (A, B, C, D, E)."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Perfect. What specific days of the week are you available for therapy during weekday mornings?\n\n<multiple_choice>\nA) Monday\nB) Tuesday\nC) Wednesday\nD) Thursday\nE) Friday\n</multiple_choice>\n\nPlease choose an option (A, B, C, D, E).\nUser: A) Monday",
+    "output": "Great, you're scheduled for occupational therapy on Monday morning. To ensure there are no changes to your appointment, we will need confirmation of your availability one more time before the session. Could you please confirm if next Monday at 9 AM is still available?\n\n<yes_no>\nA) Yes, confirmed for next Monday at 9 AM\nB) No, the timing does not work anymore and needs to be rescheduled\n</yes_no>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great, you're scheduled for occupational therapy on Monday morning. To ensure there are no changes to your appointment, we will need confirmation of your availability one more time before the session. Could you please confirm if next Monday at 9 AM is still available?\n\n<yes_no>\nA) Yes, confirmed for next Monday at 9 AM\nB) No, the timing does not work anymore and needs to be rescheduled\n</yes_no>\nUser: A) Yes, confirmed for next Monday at 9 AM",
+    "output": "Understood. Your session is confirmed for next Monday morning at 9 AM. We will send you a reminder before that day via the method of your choice (text message or email). If there are any changes to this schedule or if you need assistance with anything else, please feel free to reach out.\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Occupational therapy on Monday morning from 9 AM. Confirming for next week via text message.\"}},}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <save_preference message={\"summary\": \"Type of stroke leading to upper limb weakness\"}>\nUser: Affected by right hemiplegia, which makes scheduling activities challenging.",
+    "output": "What type of reminder method do you prefer for therapy sessions and other commitments?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What type of reminder method do you prefer for therapy sessions and other commitments?\nUser: I find digital reminders most effective, possibly a combination of phone app alerts and calendar notifications.",
+    "output": "<save_preference message={\"summary\": \"Preferred reminder methods for OT sessions\"}>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <save_preference message={\"summary\": \"Preferred reminder methods for OT sessions\"}>\nUser: How often should these reminders be sent to ensure the best adherence to therapy schedules?",
+    "output": "What is your availability like throughout the week, particularly in terms of daytime hours and any specific times you prefer or need to avoid scheduling therapies?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What is your availability like throughout the week, particularly in terms of daytime hours and any specific times you prefer or need to avoid scheduling therapies?\nUser: I have flexibility with weekdays morning slots (8-10 am) as afternoons are usually busier. Avoiding late afternoons helps too for better focus during therapy.",
+    "output": "<save_preference message={\"summary\": \"Availability for OT sessions by preference and avoidance of certain times\"}>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <save_preference message={\"summary\": \"Availability for OT sessions by preference and avoidance of certain times\"}>\nUser: What specific goals do you aim to achieve through occupational therapy?",
+    "output": "It seems like the user has shared all necessary information or may not be available currently. Moving forward without asking any more questions."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: It seems like the user has shared all necessary information or may not be available currently. Moving forward without asking any more questions.\nUser: Understood, thank you for your time and assistance. Feel free to reach out if there are further ways I can help!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Morning weekday mornings at home; OT sessions via phone reminders.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of occupational therapy? (Yes/No)\nUser: Yes, I'm undergoing physical rehabilitation.",
+    "output": "Great! If you could tell me what kind of occupational therapy you are currently involved in, that would be helpful. Would you prefer to receive reminders for your appointments?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! If you could tell me what kind of occupational therapy you are currently involved in, that would be helpful. Would you prefer to receive reminders for your appointments?\nUser: We use reminders as it helps us remember our tasks and ensures we attend all necessary sessions.",
+    "output": "That's good to know! Could you please share the time, day, and location of your occupational therapy sessions with me so I can assist in setting up reminder notifications for them?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: That's good to know! Could you please share the time, day, and location of your occupational therapy sessions with me so I can assist in setting up reminder notifications for them?\nUser: Mondays at 10 am; clinic B23.",
+    "output": "Thank you for providing that information. I will make sure to set reminders for your upcoming session on Monday at 10 am, location Clinic B23. Is there anything else I can help you with today?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for providing that information. I will make sure to set reminders for your upcoming session on Monday at 10 am, location Clinic B23. Is there anything else I can help you with today?\nUser: Could use guidance managing stress during therapy.",
+    "output": "Of course! Let's explore some effective ways to manage stress during occupational therapy sessions. What has been helpful for you in the past when dealing with stressful situations or emotions related to your rehabilitation process?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Of course! Let's explore some effective ways to manage stress during occupational therapy sessions. What has been helpful for you in the past when dealing with stressful situations or emotions related to your rehabilitation process?\nUser: I find deep breathing and mindfulness exercises useful, thanks.",
+    "output": "That sounds like a great approach! Incorporating practices like deep breathing and mindfulness can indeed help manage stress during therapy sessions. Do you have any specific techniques that you've found particularly effective or would like to learn more about?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: That sounds like a great approach! Incorporating practices like deep breathing and mindfulness can indeed help manage stress during therapy sessions. Do you have any specific techniques that you've found particularly effective or would like to learn more about?\nUser: Yes, guided imagery has been beneficial for me in visualizing peaceful settings.",
+    "output": "Guided imagery is a powerful tool. It might be helpful to incorporate this into your mindfulness exercises during therapy sessions as it can help create a calming environment even when you're not physically at a peaceful location. How frequently do you practice these techniques currently, and are there any other preferences or concerns you have about incorporating stress management strategies?\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Mondays 10 am, Clinic B23. Therapy type: therapy at home independently.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Is there a specific reason or condition that led you to seek occupational therapy (OT)?\nUser: I had a car accident last year which left me with mobility issues, hence seeking OT assistance.",
+    "output": "Would you prefer in-home sessions or would you be comfortable traveling for your OT sessions?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you prefer in-home sessions or would you be comfortable traveling for your OT sessions?\nUser: Prefer home visits as it's convenient and less stressful on my recovery journey.",
+    "output": "When is the most convenient time of day for you to have your OT sessions during weekdays (e.g., morning, afternoon, evening)?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: When is the most convenient time of day for you to have your OT sessions during weekdays (e.g., morning, afternoon, evening)?\nUser: Afternoons work best as mornings are dedicated to physio exercises.",
+    "output": "What type of communication would you prefer for session reminders and therapy-related updates? Text messages or phone calls?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What type of communication would you prefer for session reminders and therapy-related updates? Text messages or phone calls?\nUser: Both methods can be effective but texting is more convenient for me, especially with my daily schedule.",
+    "output": "Thank you for sharing all this information! Based on your preferences\u2014starting occupational therapy sessions due to a car accident leading to mobility issues and preferring in-home visits during afternoons\u2014we have gathered all the necessary details needed for scheduling an OT session. I will now proceed to finalize these arrangements with our service providers.\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Afternoons on weekdays, in-home OT sessions; reminders via text.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you prefer to continue with similar activities from before, or would you like to try new ones?\nUser: Prefer trying different activities as previous one became less challenging.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Prefer trying new activities; prefer at-home sessions with different therapist.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you feel that managing your appointment reminders aligns well with your daily routine or could we help by setting up notifications on your preferred device to support adherence to your rehabilitation program independently?\nUser: It can be challenging but manageable if I set aside time in my weekly plan.",
+    "output": "Great! Is there someone at home who helps you stay organized, like a family member or caregiver, and are they available during the times when you have therapy sessions?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Is there someone at home who helps you stay organized, like a family member or caregiver, and are they available during the times when you have therapy sessions?\nUser: No one is usually able to assist me as my appointments happen during work hours.",
+    "output": "In that case, would you be open to receiving reminders for your scheduled physical therapy sessions so you can plan accordingly even without direct assistance at home?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: In that case, would you be open to receiving reminders for your scheduled physical therapy sessions so you can plan accordingly even without direct assistance at home?\nUser: Yes, I'd appreciate set reminders sent via text or email.",
+    "output": "Would you prefer these reminders to alert you the night before, an hour in advance of your session time, or on the morning of your appointment?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you prefer these reminders to alert you the night before, an hour in advance of your session time, or on the morning of your appointment?\nUser: A day-ahead reminder would give me ample time for adjustments if needed.",
+    "output": "Understood! I will set a one-day ahead reminder schedule from now on to provide you with enough notice should there be any need for changes in your routine or schedule around your therapy sessions. This helps ensure that despite the work hours, you can keep up with your recovery plan effectively and efficiently without missing out on critical rehabilitation activities designed just for YOU!\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"One-day ahead reminder for PT sessions at home during work hours. Preference to receive via text.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you have any preferences regarding your occupational therapy session times?\nUser: Prefer early mornings for fewer distractions.",
+    "output": "What type of OT activities are you interested in or need assistance with?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What type of OT activities are you interested in or need assistance with?\nUser: I'm looking forward to hands-on cooking classes!",
+    "output": "Are there specific cooking skills or types of cuisine that interest you most, such as baking, meal preparation, kitchen safety, etc.?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are there specific cooking skills or types of cuisine that interest you most, such as baking, meal preparation, kitchen safety, etc.?\nUser: More on culinary techniques and healthy recipes.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Interested in early morning sessions focusing on culinary skills and healthy cooking recipes.\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Interested in early morning sessions focusing on culinary skills and healthy cooking recipes.\"}}}]</function_call>\nUser: Morning slots for stress management, balance exercises would be great.",
+    "output": "What are your main goals or objectives you want to achieve through occupational therapy?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What are your main goals or objectives you want to achieve through occupational therapy?\nUser: Aiming for improved daily living activities with less fatigue!",
+    "output": "Would you prefer in-person sessions at a dedicated OT facility or remote/virtual sessions from home?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you prefer in-person sessions at a dedicated OT facility or remote/virtual sessions from home?\nUser: Prefer in-person, hands-on training.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Preference for in-person sessions focusing on stress management and balance exercises.\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you have any specific goals or challenges that you want to focus on during your occupational therapy sessions?\nUser: Maintaining independence with daily activities is my goal.",
+    "output": "Are there particular daily activities where maintaining independence would be most important to you, so we can ensure those are prioritized in your OT plan?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are there particular daily activities where maintaining independence would be most important to you, so we can ensure those are prioritized in your OT plan?\nUser: Engaging in hobbies and self-care tasks independently.",
+    "output": "Would you like me to help find a local occupational therapist who specializes in hand mobility or the types of activities you mentioned (hobbies and self-care tasks)?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to help find a local occupational therapist who specializes in hand mobility or the types of activities you mentioned (hobbies and self-care tasks)?\nUser: Yes, finding someone skilled in those areas would be beneficial.",
+    "output": "Great! I'll look for an experienced OT with expertise in hand therapy and hobbies/self-care here in [your city or region]. Once I find some options, shall I send them to you?\n\nAction: {Recommendations}"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! I'll look for an experienced OT with expertise in hand therapy and hobbies/self-care here in [your city or region]. Once I find some options, shall I send them to you?\n\nAction: {Recommendations}\nUser: Yes, please provide recommendations. Thank you!",
+    "output": "I've found a highly qualified OT who specializes in hand therapy and can support your hobbies and self-care tasks. They are located at [facility name] on weekdays from 9 am to 5 pm. Would that schedule work for you?\n\nAction: {Recommendations}"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: I've found a highly qualified OT who specializes in hand therapy and can support your hobbies and self-care tasks. They are located at [facility name] on weekdays from 9 am to 5 pm. Would that schedule work for you?\n\nAction: {Recommendations}\nUser: Yes, the provided availability fits my schedule well! Thank you.",
+    "output": "You're welcome! I will make a note of this and set up an appointment with the recommended OT. Once it\u2019s confirmed, I\u2019ll let you know. Would you like me to send reminders for your future appointments?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: You're welcome! I will make a note of this and set up an appointment with the recommended OT. Once it\u2019s confirmed, I\u2019ll let you know. Would you like me to send reminders for your future appointments?\nUser: Yes, please do. Thanks again!",
+    "output": "Absolutely! I'll send you reminder notifications two days before each session at [insert preferred time(s)]. If there are any changes or if you have more preferences, feel free to let me know. \n\nAction: {Save preference}\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Scheduled weekly occupational therapy sessions for maintaining independence in daily activities. Occurring on weekdays from 9 am to 5 pm at [facility name] and reminded via email two days prior.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <question>Are you currently doing any occupational therapy?</question>\nUser: No, not at the moment but will be starting soon.",
+    "output": "I see that you are just beginning your occupational therapy journey and wanted to provide some guidance on how it can help improve your daily activities and overall quality of life. Are there specific areas or goals you'd like to focus on during your therapy sessions?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: I see that you are just beginning your occupational therapy journey and wanted to provide some guidance on how it can help improve your daily activities and overall quality of life. Are there specific areas or goals you'd like to focus on during your therapy sessions?\nUser: Focusing on improving independence in self-care tasks, such as dressing and cooking.",
+    "output": "Would you like me to remind you about the importance of these goals throughout your journey or track progress toward those specific objectives?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you about the importance of these goals throughout your journey or track progress toward those specific objectives?\nUser: Yes, please keep reminding me of the focus areas and help track my progress towards them.",
+    "output": "<question>Would you like me to remind you about the focus areas and help track your progress towards them?</question>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <question>Would you like me to remind you about the focus areas and help track your progress towards them?</question>\nUser: Absolutely! It would be great if we could set up regular check-ins for motivation and guidance on achieving these objectives.",
+    "output": "Would you prefer weekly updates or specific times of day when I should send reminders?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you prefer weekly updates or specific times of day when I should send reminders?\nUser: Weekly updates at the end of each week would work well, as it allows me to reflect upon my progress and discuss any challenges faced during that time frame with you.",
+    "output": "Alright! We'll set up a weekly call on Fridays after you have had some time to practice your occupational therapy exercises throughout the week. Would this schedule align with what works best for you?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Alright! We'll set up a weekly call on Fridays after you have had some time to practice your occupational therapy exercises throughout the week. Would this schedule align with what works best for you?\nUser: Yes, it aligns well with my availability and gives me a chance to reflect before our meeting.",
+    "output": "Great! I'll make sure to send out reminders leading up to these calls as they are scheduled on Fridays at [insert time]. Should there be any adjustments or changes in your schedule, please feel free to reach out so we can accommodate it accordingly."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! I'll make sure to send out reminders leading up to these calls as they are scheduled on Fridays at [insert time]. Should there be any adjustments or changes in your schedule, please feel free to reach out so we can accommodate it accordingly.\nUser: Thank you for setting this up and providing support throughout the journey towards my occupational therapy goals!",
+    "output": "It's my pleasure to assist you on this path toward improved self-care independence and better quality of life! Don\u2019t hesitate to reach out if there are any questions or concerns along the way. Best of luck with your upcoming sessions, and looking forward hearing about your progress soon! <end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Weekly updates on Fridays, focus areas include self-care tasks such as dressing and cooking. Therapy type is occupational therapy at home independently.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you of your scheduled appointments or help with anything else today?\nUser: No need, but thank you for checking in!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Occupational therapy at home; no reminder.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: What specific daily living tasks are most important for your occupational therapy sessions?\nUser: Activities like bathing, grooming, and using utensils improve my independence in personal care.",
+    "output": "Are there particular challenges or barriers that currently prevent you from performing these activities independently?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are there particular challenges or barriers that currently prevent you from performing these activities independently?\nUser: Yes, issues with mobility and dexterity limit my ability to perform daily tasks without assistance.",
+    "output": "How often would you like your occupational therapy sessions to be scheduled (e.g., weekly, bi-weekly)?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: How often would you like your occupational therapy sessions to be scheduled (e.g., weekly, bi-weekly)?\nUser: Once a week should work well for me.",
+    "output": "Based on our discussion today about scheduling and the specific needs of improving daily living skills such as bathing, grooming, and utensil use, I recommend starting with an initial series of sessions focusing on these areas to help increase your independence in personal care. We can then review progress and adjust if necessary. Is there a particular time during the week that would be most convenient for you?\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Weekly once-weekly occupational therapy for personal care tasks like bathing and grooming; held at home with an occupational therapist. Reminder via SMS.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any occupational therapy?\nUser: Yes, I'm undergoing OT for upper limb weakness after an accident.",
+    "output": "Would you like me to remind you on certain days or times to do your therapy exercises?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to do your therapy exercises?\nUser: Sure! Setting up reminders would be really helpful; please specify the frequency and any key dates too.",
+    "output": "Okay! I will remind you throughout the week via [insert method of reminder - text message, email]. Do you have a preference on which days or times of day?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will remind you throughout the week via [insert method of reminder - text message, email]. Do you have a preference on which days or times of day?\nUser: No specific preferences, just consistency to maintain discipline in my practice sessions would be great. Thanks for helping out with this crucial aspect of my recovery journey!",
+    "output": "Okay! I will remind you throughout the week via [insert method of reminder - text message, email]. Starting from next Monday till Friday every day at 4 PM is good for me if that suits your schedule too?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Okay! I will remind you throughout the week via [insert method of reminder - text message, email]. Starting from next Monday till Friday every day at 4 PM is good for me if that suits your schedule too?\nUser: Sounds perfect. Having those consistent reminders would aid in keeping up with my routine diligently. Thank you!",
+    "output": "Great to hear it's convenient. I will send out the first reminder today itself, after confirming this message from you. If there are any changes or specific instructions later on feel free to let me know at anytime!"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great to hear it's convenient. I will send out the first reminder today itself, after confirming this message from you. If there are any changes or specific instructions later on feel free to let me know at anytime!\nUser: Got it. Feel free to reach out for adjustments as well; your support is greatly appreciated and necessary for my recovery process. Thank you!",
+    "output": "You're welcome! It\u2019s great working with someone committed like yourself towards their rehabilitation goals! I will be here when needed - don't hesitate contacting me whether it's about adjusting reminders, or any other queries around your OT sessions etc..\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Weekly reminders set for Mon-Fri at 4 PM via text/email; OT in home independently.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Does your occupational therapy take place in the morning, afternoon, or evening?\nUser: My sessions are held in the morning. How can I help you with yours?",
+    "output": "Would you like me to remind you of your upcoming appointments?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you of your upcoming appointments?\nUser: Yes, please set reminders for my next few sessions!",
+    "output": "On which days do you have occupational therapy scheduled?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: On which days do you have occupational therapy scheduled?\nUser: My therapies are generally on weekdays. Can we plan the schedule together?",
+    "output": "Which channel would you prefer to receive your reminder notifications\u2014SMS, email or app notification?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Which channel would you prefer to receive your reminder notifications\u2014SMS, email or app notification?\nUser: Text messages work best for me; please use that for reminders!",
+    "output": "Great choice! I will send text reminders one day before each session. Is there anything else you'd like assistance with regarding your occupational therapy schedule?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great choice! I will send text reminders one day before each session. Is there anything else you'd like assistance with regarding your occupational therapy schedule?\nUser: That covers everything for now, thank you!",
+    "output": "You're welcome! If you need any further help or have changes to report about your appointments, don't hesitate to reach out. Take care and good luck with your therapies!"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: You're welcome! If you need any further help or have changes to report about your appointments, don't hesitate to reach out. Take care and good luck with your therapies!\nUser: Thank you for the support; see you next time!",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Morning weekday sessions at home. Text reminders one day before.\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any occupational therapy?\nUser: Yes, I have weekly occupational therapy sessions.",
+    "output": "Assistant: Are you doing your occupational therapy at home independently, at home with a therapist or other provider, or at a clinic?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Assistant: Are you doing your occupational therapy at home independently, at home with a therapist or other provider, or at a clinic?\nUser: At a clinic with a therapist.",
+    "output": "Assistant: Would you like me to remind you in advance of your occupational therapy appointments?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Assistant: Would you like me to remind you in advance of your occupational therapy appointments?\nUser: Yes, that would be helpful, thank you!",
+    "output": "Assistant: What days of the week do you have your occupational therapy appointments?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Assistant: What days of the week do you have your occupational therapy appointments?\nUser: Tuesdays and Thursdays.",
+    "output": "Assistant: What times do you have your occupational therapy appointments on those days?"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Assistant: What times do you have your occupational therapy appointments on those days?\nUser: Assistant: Tuesdays at 10 AM, Thursdays at 1 PM.",
+    "output": "Assistant: I will remind you in advance of your occupational therapy appointments on Tuesdays at 10 AM and Thursdays at 1 PM. \n\n<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Occupational therapy at a clinic with a therapist on Tuesdays at 10 AM and Thursdays at 1 PM, with reminders.\"}}}]</function_call>\n\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments?\nUser: That would be extremely helpful, yes!",
+    "output": "Great, please share the time and day of your next appointment."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Great, please share the time and day of your next appointment.\nUser: I have a weekly session on Wednesdays at 2 PM.",
+    "output": "<save_preference[{\"summary\": \"OT in physical rehabilitation clinic, Wednesdays at 2 PM, reminder method: reminders\"}}]>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: <save_preference[{\"summary\": \"OT in physical rehabilitation clinic, Wednesdays at 2 PM, reminder method: reminders\"}}]>\nUser: Thank you for the detailed setup; it's appreciated!",
+    "output": "That concludes our scheduling discussion! Should you have any further questions or need assistance with your therapy schedule, feel free to ask."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: That concludes our scheduling discussion! Should you have any further questions or need assistance with your therapy schedule, feel free to ask.\nUser: Thanks for being so organized and helpful!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Wednesdays at 2 PM, physical rehabilitation in a clinic, reminder method set to reminders\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Can you please tell me the specific reason why these things are difficult for you in terms of managing and scheduling your occupational therapy sessions?\nUser: The main challenge is coordinating with my busy work schedule to find suitable appointment times.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: I would appreciate receiving reminders as it helps me stay organized.",
+    "output": "Please share the time, day, and location of one or two upcoming appointments so that we can better assist with scheduling reminders."
+  },
+  {
+    "Instruction": "Gather occupational therapy patient information through a structured conversation.",
+    "input": "Assistant: Please share the time, day, and location of one or two upcoming appointments so that we can better assist with scheduling reminders.\nUser: My next appointment is at 10 am on Wednesday in room B235. Another one's Thursday at 9 am, location TBA.",
+    "output": "<function_call>[{\"function\": {\"name\": \"set_appointment_reminder\", \"arguments\": {\"date\": \"next_wednesday\", \"time\": \"10:00 AM\", \"location\": \"room B235\"}}]}]</function_call>\n<function_call>[{\"function\": {\"name\": \"set_appointment_reminder\", \"arguments\": {\"date\": \"thursday\", \"time\": \"9:00 AM\", \"location\": \"TBA\"}}]}]</function_call>\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Next Wednesday (10 AM) at room B235: OT for upper limb recovery. Thursday (9 AM, location TBA): same type.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No)\nUser: Yes, undergoing speech therapy for apraxia.",
+    "output": "If yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic).\nUser: I'm receiving therapy at a clinic.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, please provide reminders for sessions.",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: Time is every Saturday at 2 PM.",
+    "output": "Thank you for sharing your appointment details! You can now use these to help manage your speech therapy schedule effectively. I'm here if you need any more assistance or reminders set up."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing your appointment details! You can now use these to help manage your speech therapy schedule effectively. I'm here if you need any more assistance or reminders set up.\nUser: Thank you for setting up reminders, it's appreciated.",
+    "output": "You're welcome! Don't hesitate to reach out if you need any more help with your speech therapy or anything else. <end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Time: Every Saturday\\nDay(s): Weekly\\nLocation: Therapy type: therapy at home independently\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)\nUser: I'm attending in-person sessions at the clinic.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: No need, my family helps keep track of timings and appointments.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"No need for reminders as family helps keep track of timings and appointments.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments related to voice rehabilitation therapy?\nUser: Absolutely, I would appreciate it if you could send me notifications via email or text message.",
+    "output": "Great! Could you please share the time and day of your next session so we can set up a reminder for you?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Could you please share the time and day of your next session so we can set up a reminder for you?\nUser: It's on Tuesdays at 10 am with Dr. Smith.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Voice rehabilitation therapy on Tuesdays at 10 am with Dr. Smith via an app for progress tracking; reminder by email and text message.\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Therapy at home independently\nUser: Engaging in daily exercises to enhance speech and language skills from home with guidance.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, please send me appointment alerts via text or email.",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: I have a session every Wednesday at 3 PM in my local clinic for speech rehabilitation.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Wednesday 3 PM Local Clinic Aphasia Therapy (Home) Text Alerts\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No)\nUser: Yes, I'm undergoing speech therapy for aphasia.",
+    "output": "Thank you for sharing that. Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing that. Would you like to receive reminders for your appointments? (Yes/No)\nUser: Absolutely, it would be great to get appointment reminders!",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: \"Morning, twice weekly in city center.\"",
+    "output": "Great! If you need assistance or have any questions about your therapy sessions, feel free to reach out."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! If you need assistance or have any questions about your therapy sessions, feel free to reach out.\nUser: Thank you for the support and advice during our chat!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Morning, twice weekly in city center. Speech Therapy at Home Independently.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, please send me reminders as my memory is unreliable.",
+    "output": "If yes, please share the time, day, and location of your upcoming appointments so I can set up notifications accordingly."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your upcoming appointments so I can set up notifications accordingly.\nUser: Time: Tuesday afternoons; Location: Home office.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Time: Tuesday afternoons\\nDay(s): Tuesdays & Fridays\\nLocation: Home office\\nTherapy type: Therapy at home independently\\nReminder method: Email\"}}}, \n<end>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Please specify the setting in which your current speech therapy is conducted:\n(Multiple choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)\nUser: At-home with a private online tutor.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, it would be helpful to have appointment reminders sent via text message and email.",
+    "output": "Thank you! Here's what we know so far:\n- You are currently doing speech therapy.\n- Your type of speech therapy is for aphasia recovery after a stroke.\n- Therapy is being conducted at home with an online private tutor.\n- You would like to receive reminders for your appointments via text message and email. \n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Online aphasia recovery at home with reminder via text and email.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No)\nUser: Yes, I'm undergoing speech therapy for aphasia recovery.",
+    "output": "Great! What type of speech therapy are you doing? Please select from one of these options: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! What type of speech therapy are you doing? Please select from one of these options: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic.\nUser: Home-based therapy to improve my independence in communication tasks and daily activities.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, I would appreciate receiving helpful appointment reminders via text message or email.",
+    "output": "Thank you! Please share the time, day, location of your appointments so we can set up a system to remind you efficiently and effectively."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you! Please share the time, day, location of your appointments so we can set up a system to remind you efficiently and effectively.\nUser: Scheduled for weekly on Thursdays at 3 PM; located in my home for privacy and convenience.",
+    "output": "Thank you for the information! I'll be sure to keep your appointments straight and send reminders as needed. If you have any questions or need further assistance, feel free to ask. \n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Thursdays at 3 PM; Home-based aphasia recovery.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Absolutely, reminders would be very helpful!",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: Tuesdays at 4 PM; sessions are held online via Zoom.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Tuesdays at 4 PM, Online Zoom, aphasia therapy, individual remote\"}}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)\nUser: Therapy at a therapy clinic with a therapist.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, I would appreciate receiving reminders for my appointments.",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: Time is flexible; days are variable due to therapist availability. Location is a local clinic.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Flexible timing for local clinic\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Flexible timing for local clinic\"}}}]</function_call>\nUser: Thank you for the reminders, they've been very helpful!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy not specified; flexible timing for local clinic\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: It seems like we haven't completed a complete path yet. Please let me know what you would like to do next by responding with \"continue\" or specifying another option.\nUser: Continue.",
+    "output": "Great! Now that you are undergoing speech therapy, could you tell me the type of speech therapy you are currently doing? Would you prefer multiple choices for this question?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Now that you are undergoing speech therapy, could you tell me the type of speech therapy you are currently doing? Would you prefer multiple choices for this question?\nUser: One technique I use is called \"articulation.\"",
+    "output": "Thank you for sharing that with me. Based on your response and to ensure we cover all bases in our discussion, would you like to receive reminders for any of the following options related to your speech therapy sessions? Please select 'Yes' or 'No':\n\n1. Reminders for appointments at a therapy clinic (if applicable)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing that with me. Based on your response and to ensure we cover all bases in our discussion, would you like to receive reminders for any of the following options related to your speech therapy sessions? Please select 'Yes' or 'No':\n\n1. Reminders for appointments at a therapy clinic (if applicable)\nUser: No, I can manage on my own now.",
+    "output": "Great! It seems like we have covered all necessary aspects of this discussion. If you ever need assistance in the future regarding speech therapy or any other needs, feel free to reach out. Have a wonderful day and take care!"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! It seems like we have covered all necessary aspects of this discussion. If you ever need assistance in the future regarding speech therapy or any other needs, feel free to reach out. Have a wonderful day and take care!\nUser: Thank you for your support.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Speech therapy: at-home independent, no reminders, time and day unknown, location not specified.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: To help me better understand how to assist you with managing your speech therapy schedule and ensuring that you receive reminders for your appointments, could you please tell me if you would like to have reminders sent for both doing exercises at home independently as well as reminding you in advance of your scheduled appointments?\nUser: Absolutely! Home exercises are crucial.",
+    "output": "Would you like me to remind you on certain days or times to do your therapy exercises, and also remind you in advance of your speech therapy appointments?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like me to remind you on certain days or times to do your therapy exercises, and also remind you in advance of your speech therapy appointments?\nUser: Yes, both reminders would be helpful.",
+    "output": "Great! Could you please share the time and day when you prefer receiving reminders about doing exercises at home independently? If unsure yet, let me know if there's a specific time or range that might work for you."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Could you please share the time and day when you prefer receiving reminders about doing exercises at home independently? If unsure yet, let me know if there's a specific time or range that might work for you.\nUser: Afternoon works best; afternoons are quieter.",
+    "output": "Thank you for sharing your preferred time! Now, could you please share the location where you do your speech therapy exercises at home? This information will help me set up reminders more effectively and ensure they reach you in a timely manner."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing your preferred time! Now, could you please share the location where you do your speech therapy exercises at home? This information will help me set up reminders more effectively and ensure they reach you in a timely manner.\nUser: Bedroom corner is my designated area.",
+    "output": "Great! Thank you for providing that detail. I'll make sure to remind you about both doing exercises at the agreed time and also about your appointments coming up. Is there anything else you would like assistance with regarding managing your speech therapy schedule? If not, we can proceed to finalize these details once all information is gathered.\n\n<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Afternoon in Bedroom corner for clarity exercises and appointments.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, please set up automatic notifications for my next appointment.",
+    "output": "Please specify the time, day, and location of your next appointment so we can ensure accurate tracking of your schedule."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Please specify the time, day, and location of your next appointment so we can ensure accurate tracking of your schedule.\nUser: Next session at 4 PM on Wednesday in suite B123 near main entrance.",
+    "output": "<function_call>[{\"function\": {\"name\": \"send_appointment_reminder\", \"arguments\": {\"summary\":\" time: next_session_at_4pm_on_wednesday, location: suite_b123\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: <function_call>[{\"function\": {\"name\": \"send_appointment_reminder\", \"arguments\": {\"summary\":\" time: next_session_at_4pm_on_wednesday, location: suite_b123\"}}}]</function_call>\nUser: Thank you for setting up the reminder. I look forward to receiving it and will make sure not to miss my next appointment.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Next Wed at 4 PM near main entrance. No need for reminder.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No)\nUser: Yes, I am undergoing speech therapy now.",
+    "output": "If yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)\nUser: Therapy at home independently.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, I would appreciate that.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Therapy at home independently; willing to receive reminders for future sessions.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No)\nUser: Yes, I'm undergoing speech therapy for aphasia.",
+    "output": "Great! What kind of speech therapy are you currently doing - Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! What kind of speech therapy are you currently doing - Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic?\nUser: Home-based therapy to improve independence and confidence in communication skills.",
+    "output": "Thank you for the information. Would you like to receive reminders for your appointments so that you can ensure continuity of care and maximize gains from each session?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for the information. Would you like to receive reminders for your appointments so that you can ensure continuity of care and maximize gains from each session?\nUser: Absolutely, consistent reminders would be beneficial.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Daily reminders for aphasia therapy at home set up daily.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, what type of speech therapy are you doing? Please select one option: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic.\nUser: I am working in-home under professional guidance.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, it would be very helpful to get timely notifications.",
+    "output": "Please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Please share the time, day, and location of your appointments.\nUser: Time: Tuesdays at 4 PM; Location: Home.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Speech therapy type is apraxia, working under professional guidance in-home, with reminders set for every Tuesday at 4 PM.\"}}}]</function_call>\nYou've reached the end of the decision tree."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Speech therapy type is apraxia, working under professional guidance in-home, with reminders set for every Tuesday at 4 PM.\"}}}]</function_call>\nYou've reached the end of the decision tree.\nUser: Thank you! I appreciate your support and organization tips as a patient myself undergoing speech therapy. It helps me stay on track with my appointments.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Tuesday at 4 PM, In-home apraxia therapy, Time/Day reminders, Alert via SMS.\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing that! What type of speech therapy are you currently doing at home independently? Please select one option from the following choices: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic.\nUser: Home independently for apraxia.",
+    "output": "Thank you for confirming your preference. Would you like to receive reminders for your appointments? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for confirming your preference. Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, please send me appointment reminders.",
+    "output": "Great! Please share the time and day of your speech therapy sessions so we can set up those reminders effectively."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Please share the time and day of your speech therapy sessions so we can set up those reminders effectively.\nUser: M-F at 10 AM with weekend reminders.",
+    "output": "<function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"M-F at 10 AM for apraxia, at home independently\"}}}]</function_call>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: During your session, what kind of exercises do you perform?\nUser: We focus on tongue-twisters and speech drills.",
+    "output": "Do you want to receive reminders for your appointments?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Do you want to receive reminders for your appointments?\nUser: Yes, please set up automatic notifications.",
+    "output": "Great! Please share the time, day, and location of your appointments so we can ensure they are included in your reminder schedule."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! Please share the time, day, and location of your appointments so we can ensure they are included in your reminder schedule.\nUser: Will keep track with ease now that you've set it up for me. Thank you!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Time: Not specified; Day(s): Flexible; Location Therapy type: therapy at home independently; Reminder method: SMS\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"key\": \"value\"}}}]</function_call>\nUser: Repetitive exercises, especially those involving language.",
+    "output": "Are you currently doing any type of speech therapy? (Yes/No)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No)\nUser: Yes, I'm working on my pronunciation and word fluency.",
+    "output": "What kind of techniques have you found most helpful during your sessions so far?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: What kind of techniques have you found most helpful during your sessions so far?\nUser: Using picture cues helps me communicate better.",
+    "output": "Are you currently doing any type of speech therapy? (Yes/No) \nIf yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Are you currently doing any type of speech therapy? (Yes/No) \nIf yes, what type of speech therapy are you doing? (Multiple-choice: Therapy at home independently, Therapy at home with a therapist or other provider, or Therapy at a therapy clinic)\nUser: Apraxia treatment; Home sessions help.",
+    "output": "Would you like to receive reminders for your appointments? (Yes/No)\nIf yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nIf yes, please share the time, day, and location of your appointments.\nUser: Yes, helps me stay on track with my routine. Mondays at 4 pm here.",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Mondays aphasia therapy at home independently, reminder via SMS\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: That's great to hear that you are involved in a structured program! Could you tell me how you are doing this therapy at the moment (Home independently/with a therapist or other provider/At a clinic)?\nUser: I work with a certified speech-language pathologist remotely using video calls.",
+    "output": "Thank you for sharing that. It's wonderful to hear about your remote sessions! Would you like us to help set up reminders for your upcoming appointments? Just let me know if yes, and we can discuss how best to proceed with scheduling alerts."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for sharing that. It's wonderful to hear about your remote sessions! Would you like us to help set up reminders for your upcoming appointments? Just let me know if yes, and we can discuss how best to proceed with scheduling alerts.\nUser: Absolutely! Could you assist in creating a digital planner for managing these dates and times better please?",
+    "output": "Of course! I'd be happy to help set up an online calendar where your appointments will automatically show up, ensuring that you never miss any of your crucial sessions. When would you prefer we start setting this up for you?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Of course! I'd be happy to help set up an online calendar where your appointments will automatically show up, ensuring that you never miss any of your crucial sessions. When would you prefer we start setting this up for you?\nUser: We can commence the creation process anytime soon as possible please.",
+    "output": "Certainly! I'll get started on organizing a schedule for you right away. If there is anything else you need assistance with, feel free to ask at any time."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Certainly! I'll get started on organizing a schedule for you right away. If there is anything else you need assistance with, feel free to ask at any time.\nUser: Great, thank you so much! Looking forward to using it regularly.",
+    "output": "It was my pleasure! You\u2019re always welcome to reach out if needed. I wish you the very best in your speech therapy journey and will be here whenever support is required. Take care until next time! <end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Weekly video call sessions remotely set for Saturdays, Ongoing treatment type (voice rehabilitation), Therapy type: At home independently\"}}},</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Sure, daily alerts would be helpful.",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: Time is flexible; weekdays after work. Location at home.",
+    "output": "<function_call>[{\"function\": {\"name\": \"set_reminder\", \"arguments\": {\"summary\":\"daily before the appointment time, method: email, therapy type: home-based therapy with SLP for apraxia, day: flexible weekdays after work, location: user's home, reminder method:daily email alert\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great! If you are currently doing speech therapy or have been recently, could you please specify the setting where these therapies take place? This helps us better understand your current situation and tailor our suggestions accordingly.\nUser: They occur at a local clinic twice weekly.",
+    "output": "It's excellent that you have access to regular sessions! Now let\u2019s discuss how we can help ensure you remember the time and day of each session for continuity in treatment. Would you like us to send reminders about your appointments?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: It's excellent that you have access to regular sessions! Now let\u2019s discuss how we can help ensure you remember the time and day of each session for continuity in treatment. Would you like us to send reminders about your appointments?\nUser: Yes, please set up appointment notifications.",
+    "output": "Fantastic! Could you provide me with specific details about when and where these sessions take place so we can make sure those are captured correctly in the reminder schedule?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Fantastic! Could you provide me with specific details about when and where these sessions take place so we can make sure those are captured correctly in the reminder schedule?\nUser: Sessions occur weekly at a nearby community center.",
+    "output": "Thank you for that information! Now, let's set up your reminders to ensure you never miss an appointment again. When would be convenient times for us to send these notifications\u2014before or on the day of each session?"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Thank you for that information! Now, let's set up your reminders to ensure you never miss an appointment again. When would be convenient times for us to send these notifications\u2014before or on the day of each session?\nUser: Send them before as last-minute changes can happen.",
+    "output": "Got it, we will make sure to send you a reminder before every scheduled therapy session. If there is ever any change in your appointment time, please feel free to contact us so that we may promptly update the schedule and avoid missing another valuable session!"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Got it, we will make sure to send you a reminder before every scheduled therapy session. If there is ever any change in your appointment time, please feel free to contact us so that we may promptly update the schedule and avoid missing another valuable session!\nUser: Understood; I'll notify of changes immediately.",
+    "output": "Perfect! Thank you for sharing all these details with me today. If there is ever a need for any adjustments or if you decide to start therapy again in the future, please don\u2019t hesitate to reach out and we will be more than happy to assist you once more. Have a successful session and take care!"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Perfect! Thank you for sharing all these details with me today. If there is ever a need for any adjustments or if you decide to start therapy again in the future, please don\u2019t hesitate to reach out and we will be more than happy to assist you once more. Have a successful session and take care!\nUser: Will do; thank you for your support!",
+    "output": "<end>\n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Weekly sessions at nearby community center; reminders sent before each session; reminder method: text message\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments? (Yes/No)\nUser: Yes, reminders would be very helpful!",
+    "output": "If yes, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: If yes, please share the time, day, and location of your appointments.\nUser: Time is flexible; sessions at home or office.",
+    "output": "Great! I will make sure to send you reminders for all upcoming speech therapy sessions. Your reminder method is set as: \n <function_call>[{\"function\": {\"name\": \"save_preference\", \"arguments\": {\"summary\": \"Time: Flexible; Day(s): Not specified; Location: Home/Office; Therapy type: Therapy at home independently, At-home with therapist, Reminder method: Email\"}}}]</function_call>\n<end>"
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Would you like to receive reminders for your appointments?\nUser: Absolutely! Having appointment alerts would be very helpful.",
+    "output": "Great, please share the time, day, and location of your appointments."
+  },
+  {
+    "Instruction": "Gather speech therapy patient information through a structured conversation.",
+    "input": "Assistant: Great, please share the time, day, and location of your appointments.\nUser: Yes, I'll provide those details once I have them confirmed with my therapist.",
+    "output": "<end>[save_preference]\n The appointment reminder details from the chat history indicate that the user is currently undergoing speech therapy for apraxia. They have expressed interest in receiving reminders for their appointments and are willing to provide time, day, location of appointments once confirmed with their therapist. The decision tree concludes here as no further action is required after they indicated not wanting reminders.\n<end>"
   }
 ]
