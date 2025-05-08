@@ -13,8 +13,8 @@ import os
 
 # Note: `userdata.get` is a Colab API. If you're not using Colab, set the env
 # vars as appropriate for your system.
-os.environ["KAGGLE_USERNAME"] = "wuyingting"
-os.environ["KAGGLE_KEY"] = "e2cd889a77e197d70f2a86824f284604"
+os.environ["KAGGLE_USERNAME"] = "KAGGLE_USERNAME"
+os.environ["KAGGLE_KEY"] = "KAGGLE_KEY"
 
 class CFG:
     seed = 42
