@@ -1,0 +1,72 @@
+[
+    {
+        "name": "get_weather",
+        "description": "Get detailed weather forecast and current weather for a city",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "city_name": {
+                    "type": "string",
+                    "description": "City name to retrieve weather forecast and current weather for"
+                }
+            },
+            "required": ["city_name"]
+        }
+    },
+    {
+        "name": "save_preference",
+        "description": "Save user preference or summary string",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "summary": {
+                    "type": "string",
+                    "description": "Summary text or preference data"
+                }
+            },
+            "required": ["summary"]
+        }
+    },
+    {
+        "name": "calendar",
+        "description": "Access and list user's Google Calendars",
+        "parameters": {
+            "type": "object",
+            "properties": {}
+        }
+    },
+    {
+        "name": "contact",
+        "description": "Access contact list to reach care team or emergency contact",
+        "parameters": {
+            "type": "object",
+            "properties": {}
+        }
+    },
+    {
+        "name": "pull_personal_information",
+        "description": "Retrieve previously saved personal medical history or preferences",
+        "parameters": {
+            "type": "object",
+            "properties": {}
+        }
+    },
+    {
+        "name": "google_search",
+        "description": "Search the web using Google Custom Search API",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "Search query string"
+                },
+                "num_results": {
+                    "type": "integer",
+                    "description": "Number of results to return (default 5)"
+                }
+            },
+            "required": ["query", "num_results"]
+        }
+    }
+]
