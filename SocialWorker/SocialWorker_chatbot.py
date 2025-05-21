@@ -1,10 +1,10 @@
 import requests
 import json
-#from sample_function import get_current_weather, get_local_time 
+from sample_function import get_current_weather, get_local_time 
 chat_history = ""
 END_KEYWORDS = ["goodbye", "thank you", "bye", "farewell", "thanks", "see you"]
 
-'''
+
 with open("C:/Users/tut44419/research/ollama/social worker/tool_definition.json", "r") as file:
     TOOL_DEFINITIONS = json.load(file)
 '''
@@ -39,7 +39,7 @@ TOOL_DEFINITIONS = [
         }
     }
 ]
-
+'''
 
 def is_end_of_conversation(text):
     text = text.lower()
