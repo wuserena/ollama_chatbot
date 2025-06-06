@@ -6,8 +6,6 @@ Our **LLM-based agent framework** integrates three key components:
 2. Tool-Use Module  
 3. Conversation Flow Controller  
 
----
-
 ## 1. Personal Information Database
 
 This module allows the agent to:
@@ -15,8 +13,6 @@ This module allows the agent to:
 - Track the patient’s medical history  
 - Store personalized profiles  
 - Maintain a contextual understanding of health status and care needs  
-
----
 
 ## 2. Tool-Use Module
 
@@ -31,8 +27,6 @@ Agents can access core system functions, including:
 - Retrieving stored medical history or user preferences  
 - Accessing real-time information (e.g., weather, search results)  
 - Performing web searches at the patient’s request  
-
----
 
 ## 3. Conversation Flow Controller
 
