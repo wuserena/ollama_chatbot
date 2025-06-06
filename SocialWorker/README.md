@@ -6,7 +6,7 @@ our LLM-based agent framework integrates three key components: a personal inform
 1. Personal Information Database
 This module allows agents to track the patient's medical history, store personalized profiles, and maintain an understanding of core health and support concepts.
 
-3. Tool-Use Module
+2. Tool-Use Module
 Agents can access core system functions, including:
   1.	Saving user preferences and medical history 
   2.	Save reminder or event (sync calendar) 
