@@ -1,58 +1,34 @@
 
 # Social Worker Chatbot 
+our LLM-based agent framework integrates three key components: a personal information database, a tool-use module, and a conversation flow controller. 
 
-📘 1. Personal Information Database
-This module enables the chatbot to:
+1. Personal Information Database
+This module allows agents to track the patient's medical history, store personalized profiles, and maintain an understanding of core health and support concepts.
 
-Track the patient’s medical history
+2. Tool-Use Module
+Agents can access core system functions, including:\
+  1.	Saving user preferences and medical history 
+  2.	Save reminder or event (sync calendar) 
+  3.	Managing reminders and calendar events 
+  4.	Providing notifications for tasks or appointments 
+  5.	Recording and sharing memos with care teams 
+  6.	Contacting emergency resources or healthcare professionals 
+  7.	Pull out information from previously saved medical history or preferences 
+  8.	Accessing real-time information (e.g., weather, web searches) 
+  9.	Search web at patient’s request.  
+These tools extend the agent's utility beyond conversation into real-world support tasks.
 
-Store personalized user profiles
-
-Maintain awareness of health status and care concepts
-
-It serves as the memory system, allowing the agent to provide contextually accurate and patient-specific responses.
-
-🛠️ 2. Tool-Use Module
-The tool-use module allows the chatbot to perform real-world tasks by calling system functions. Key capabilities include:
-
-Saving user preferences and medical history
-
-Scheduling and syncing reminders/events with the calendar
-
-Managing ongoing reminders and notifications
-
-Sending alerts for tasks or appointments
-
-Recording and sharing memos with care teams
-
-Contacting emergency services or healthcare professionals
-
-Retrieving data from stored history or preferences
-
-Accessing real-time information (e.g., weather, search queries)
-
-Performing web searches upon patient request
-
-These tools empower the chatbot to move beyond conversation and into actionable patient support.
-
-💬 3. Conversation Flow Controller
-This module classifies the user’s intent and guides the conversation across multiple topics, including:
-
-Medical & functional information
-
-Exercise & therapy routines
-
-Greetings and small talk
-
-Reminder setup and follow-up
-
-Answering patient questions
-
-Daily check-ins
-
-Medication support
-
-The flow controller dynamically selects the next conversational step based on the patient’s response. It coordinates with both the personal information database and the tool-use module to generate personalized, meaningful outputs.
+3. Conversation Flow Controller\
+This module enables the agent to classify and transition between different conversational topics, including:
+  1.	Patient Information: Medical & Functional 
+  2.	Patient Information: Exercise & Therapy 
+  3.	Greetings 
+  4.	Reminders 
+  5.	Patient Questions 
+  6.	Daily Check-Ins and  
+  7.	Medication Support
+     
+The conversation flow is dynamically determined based on the patient's responses. The agent can invoke tools, take actions, and generate personalized recommendations and responses by referencing information from the personal database.
 ## System Environment  
 
 * Running Chatbot  
