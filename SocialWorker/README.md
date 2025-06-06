@@ -32,13 +32,13 @@ Agents can access core system functions, including:
 
 This module allows the agent to classify and transition between conversational topics such as:
 
-- **Patient Information: Medical & Functional**  
-- **Patient Information: Exercise & Therapy**  
-- **Greetings and Social Interaction**  
-- **Reminders and Notifications**  
-- **Answering Patient Questions**  
-- **Daily Check-Ins**  
-- **Medication Support**  
+- Patient Information: Medical & Functional
+- Patient Information: Exercise & Therapy
+- Greetings and Social Interaction
+- Reminders and Notifications
+- Answering Patient Questions
+- Daily Check-Ins
+- Medication Support
 
 The conversation flow is dynamically driven by the patient’s input.  
 The agent can invoke tools, take contextual actions, and generate personalized responses by referencing the personal database.
