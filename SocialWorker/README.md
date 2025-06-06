@@ -54,7 +54,7 @@ We simulate a conversation between two roles:
 - **Assistant Model**: Acts like a helpful doctor. It uses a decision tree to ask structured, relevant questions based on patient responses.
 - **Patient Model**: Plays the role of a real patient, providing diverse and realistic replies.
 
-To train a large language model effectively, we need a substantial amount of dialogue data—especially with **variation in phrasing** for the same intent. To achieve this, we log and store each chat history iteration.
+To train a large language model effectively, we need a substantial amount of dialogue data, especially with the same questions asked in different ways. To achieve this, we log and store each chat history iteration.
 
 ### Step 1: Generate Simulated Chat History
 This script creates multiple conversation records between the assistant and patient models.
@@ -70,17 +70,16 @@ Merges individual chat history into a single dataset ready for model training or
 python combine.py
 ```
 
-## Run Serve
-1. Setting system environment
+## Run Chatbot
+1. Load Fine-Tuned Model
+
  ```sh
-set OLLAMA_HOST=http://0.0.0.0:11434
+ollama run hf.co/SerenaWU/model_ExerciseTherapy:Q4_K_M
 ```
+2. Start Runing Chatbot
+Once the model is loaded, launch the chatbot interface:
 ```sh
-$env:OLLAMA_HOST = "http://0.0.0.0:11434"
-```
-2. Start running sever
-```sh
-ollama serve
+python SocialWorker_chatbot.py
 ```
 
 
