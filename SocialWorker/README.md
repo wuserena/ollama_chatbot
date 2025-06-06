@@ -1,6 +1,5 @@
 
 # Social Worker Chatbot 
-# 🧑‍⚕️ Social Worker Chatbot
 
 Our **LLM-based agent framework** integrates three key components:  
 1. Personal Information Database  
@@ -9,7 +8,7 @@ Our **LLM-based agent framework** integrates three key components:
 
 ---
 
-## 📘 1. Personal Information Database
+## 1. Personal Information Database
 
 This module allows the agent to:
 
@@ -19,7 +18,7 @@ This module allows the agent to:
 
 ---
 
-## 🛠️ 2. Tool-Use Module
+## 2. Tool-Use Module
 
 Agents can access core system functions, including:
 
@@ -33,11 +32,9 @@ Agents can access core system functions, including:
 - Accessing real-time information (e.g., weather, search results)  
 - Performing web searches at the patient’s request  
 
-> These tools extend the agent’s capabilities beyond conversation into real-world support tasks.
-
 ---
 
-## 💬 3. Conversation Flow Controller
+## 3. Conversation Flow Controller
 
 This module allows the agent to classify and transition between conversational topics such as:
 
@@ -51,6 +48,7 @@ This module allows the agent to classify and transition between conversational t
 
 The conversation flow is dynamically driven by the patient’s input.  
 The agent can invoke tools, take contextual actions, and generate personalized responses by referencing the personal database.
+
 ## System Environment  
 
 * Running Chatbot  
